@@ -25,8 +25,21 @@ def read_packet(packet_id):
     
     # for var in vars:
     #     print(var)
+    index_iterator = 0
     
-    for attr in attr_write:
+    while index_iterator < len(attr_write):
+        attr = attr_write[index_iterator]
+        
+        if attr.get("variable") and ".length" in attr.get("variable"):
+            print("Début de la boucle")
+            print("readLength")
+            length = 2
+            index_iterator += 1
+            for _ in range(length - 1):
+                print(attr_write[index_iterator])
+            continue    
+                
+                
         
         print(attr)  
         # if attr.get('type') == 'Byte':
@@ -41,10 +54,14 @@ def read_packet(packet_id):
         #     print(attr.get('variable') + ": \t" + "readShort")    
         # else:
         #     print(attr)   
+        
+
+            
         if attr.get('object'):
             id = find_protocol_id_by_name(attr.get('object'))
             read_packet(id)            
   
+        index_iterator += 1    
     
     
 read_packet(2066)    

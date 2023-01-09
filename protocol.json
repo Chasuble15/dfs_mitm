@@ -293,6 +293,9 @@
         "attr_write": [
             {
                 "parent": "IdentificationFailedMessage"
+            },
+            {
+                "object": "Version"
             }
         ]
     },
@@ -361,6 +364,9 @@
             {
                 "type": "Byte",
                 "variable": "_box0"
+            },
+            {
+                "object": "Version"
             },
             {
                 "type": "UTF",
@@ -453,6 +459,9 @@
                 "variable": "login"
             },
             {
+                "object": "AccountTagInformation"
+            },
+            {
                 "type": "Int",
                 "variable": "accountId"
             },
@@ -537,7 +546,7 @@
                 "variable": "servers.length"
             },
             {
-                "variable": "servers",
+                "variable": "servers[_i1]",
                 "object": "GameServerInformations"
             }
         ]
@@ -673,7 +682,7 @@
                 "variable": "servers.length"
             },
             {
-                "variable": "servers",
+                "variable": "servers[_i1]",
                 "object": "GameServerInformations"
             },
             {
@@ -691,6 +700,11 @@
             {
                 "name": "server",
                 "type": "GameServerInformations;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "GameServerInformations"
             }
         ]
     },
@@ -775,6 +789,11 @@
             {
                 "name": "tag",
                 "type": "AccountTagInformation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -881,6 +900,9 @@
             {
                 "type": "Double",
                 "variable": "actorId"
+            },
+            {
+                "object": "CharacterCharacteristics"
             }
         ]
     },
@@ -961,7 +983,7 @@
                 "variable": "almostFinishedAchievements.length"
             },
             {
-                "variable": "almostFinishedAchievements",
+                "variable": "almostFinishedAchievements[_i1]",
                 "object": "Achievement"
             }
         ]
@@ -993,7 +1015,7 @@
                 "variable": "startedAchievements.length"
             },
             {
-                "variable": "startedAchievements",
+                "variable": "startedAchievements[_i1]",
                 "object": "Achievement"
             },
             {
@@ -1001,7 +1023,7 @@
                 "variable": "finishedAchievements.length"
             },
             {
-                "variable": "finishedAchievements",
+                "variable": "finishedAchievements[_i2]",
                 "object": "Achievement"
             }
         ]
@@ -1033,6 +1055,11 @@
             {
                 "name": "achievement",
                 "type": "Achievement;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "Achievement"
             }
         ]
     },
@@ -1092,6 +1119,11 @@
             {
                 "name": "achievement",
                 "type": "AchievementAchievedRewardable;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "AchievementAchievedRewardable"
             }
         ]
     },
@@ -1489,6 +1521,9 @@
             {
                 "type": "Double",
                 "variable": "targetId"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -1909,6 +1944,9 @@
         "attr_write": [
             {
                 "parent": "AbstractGameActionMessage"
+            },
+            {
+                "object": "GameActionMark"
             }
         ]
     },
@@ -2480,7 +2518,7 @@
                 "variable": "targetIds.length"
             },
             {
-                "variable": "targetIds",
+                "variable": "targetIds[_i1]",
                 "object": "GameFightEffectTriggerCount"
             }
         ]
@@ -2673,6 +2711,9 @@
             {
                 "type": "UTF",
                 "variable": "allianceTag"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -2731,7 +2772,7 @@
                 "variable": "guilds.length"
             },
             {
-                "variable": "guilds",
+                "variable": "guilds[_i2]",
                 "object": "GuildInAllianceInformations"
             },
             {
@@ -2817,11 +2858,14 @@
         ],
         "attr_write": [
             {
+                "object": "AllianceFactSheetInformations"
+            },
+            {
                 "type": "Short",
                 "variable": "guilds.length"
             },
             {
-                "variable": "guilds",
+                "variable": "guilds[_i2]",
                 "object": "GuildInsiderFactSheetInformations"
             },
             {
@@ -2947,6 +2991,9 @@
             {
                 "type": "UTF",
                 "variable": "recruterName"
+            },
+            {
+                "object": "BasicNamedAllianceInformations"
             }
         ]
     },
@@ -2970,6 +3017,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "AllianceInformations"
+            },
             {
                 "type": "Boolean",
                 "variable": "enabled"
@@ -3021,7 +3071,7 @@
                 "variable": "alliances.length"
             },
             {
-                "variable": "alliances",
+                "variable": "alliances[_i1]",
                 "object": "AllianceFactSheetInformations"
             }
         ]
@@ -3046,6 +3096,11 @@
             {
                 "name": "Alliancemblem",
                 "type": "GuildEmblem;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -3128,6 +3183,9 @@
             {
                 "type": "UTF",
                 "variable": "allianceTag"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -3230,7 +3288,7 @@
                 "variable": "alliances.length"
             },
             {
-                "variable": "alliances",
+                "variable": "alliances[_i1]",
                 "object": "AllianceInformations"
             },
             {
@@ -3262,7 +3320,7 @@
                 "variable": "allianceMapWinners.length"
             },
             {
-                "variable": "allianceMapWinners",
+                "variable": "allianceMapWinners[_i5]",
                 "object": "BasicAllianceInformations"
             },
             {
@@ -3299,7 +3357,7 @@
                 "variable": "alliances.length"
             },
             {
-                "variable": "alliances",
+                "variable": "alliances[_i1]",
                 "object": "AllianceFactSheetInformations"
             }
         ]
@@ -3661,6 +3719,11 @@
                 "name": "type",
                 "type": "AtlasPointsInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "AtlasPointsInformations"
+            }
         ]
     },
     {
@@ -3980,6 +4043,9 @@
                 "variable": "position"
             },
             {
+                "object": "AccountTagInformation"
+            },
+            {
                 "type": "Int",
                 "variable": "accountId"
             },
@@ -4289,6 +4355,11 @@
                 "name": "alteration",
                 "type": "AlterationInfo;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "AlterationInfo"
+            }
         ]
     },
     {
@@ -4300,6 +4371,11 @@
             {
                 "name": "alteration",
                 "type": "AlterationInfo;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "AlterationInfo"
             }
         ]
     },
@@ -4320,7 +4396,7 @@
                 "variable": "alterations.length"
             },
             {
-                "variable": "alterations",
+                "variable": "alterations[_i1]",
                 "object": "AlterationInfo"
             }
         ]
@@ -4342,7 +4418,7 @@
                 "variable": "alterations.length"
             },
             {
-                "variable": "alterations",
+                "variable": "alterations[_i1]",
                 "object": "AlterationInfo"
             }
         ]
@@ -4404,6 +4480,9 @@
         "attr_write": [
             {
                 "parent": "CharacterReplayRequestMessage"
+            },
+            {
+                "object": "RemodelingInformation"
             }
         ]
     },
@@ -4454,6 +4533,9 @@
         ],
         "attr_write": [
             {
+                "object": "CharacterBaseInformations"
+            },
+            {
                 "type": "Boolean",
                 "variable": "isCollectingStats"
             }
@@ -4491,6 +4573,9 @@
         "attr_write": [
             {
                 "parent": "CharacterSelectionMessage"
+            },
+            {
+                "object": "RemodelingInformation"
             }
         ]
     },
@@ -4547,7 +4632,7 @@
                 "variable": "charactersToRemodel.length"
             },
             {
-                "variable": "charactersToRemodel",
+                "variable": "charactersToRemodel[_i1]",
                 "object": "CharacterToRemodelInformations"
             }
         ]
@@ -4975,7 +5060,7 @@
                 "variable": "spells.length"
             },
             {
-                "variable": "spells",
+                "variable": "spells[_i2]",
                 "object": "ForgettableSpellItem"
             }
         ]
@@ -5079,6 +5164,11 @@
                 "name": "stats",
                 "type": "CharacterCharacteristicsInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "CharacterCharacteristicsInformations"
+            }
         ]
     },
     {
@@ -5090,6 +5180,11 @@
             {
                 "name": "stats",
                 "type": "CharacterCharacteristicsInformations;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "CharacterCharacteristicsInformations"
             }
         ]
     },
@@ -5217,6 +5312,9 @@
             {
                 "type": "Double",
                 "variable": "actorId"
+            },
+            {
+                "object": "CharacterSpellModification"
             }
         ]
     },
@@ -5390,7 +5488,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -5436,7 +5534,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -5529,7 +5627,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -5599,7 +5697,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -5985,6 +6083,11 @@
                 "name": "movement",
                 "type": "EntityMovementInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "EntityMovementInformations"
+            }
         ]
     },
     {
@@ -6004,7 +6107,7 @@
                 "variable": "movements.length"
             },
             {
-                "variable": "movements",
+                "variable": "movements[_i1]",
                 "object": "EntityMovementInformations"
             }
         ]
@@ -6052,6 +6155,9 @@
             {
                 "type": "Double",
                 "variable": "id"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -6158,7 +6264,7 @@
                 "variable": "dispositions.length"
             },
             {
-                "variable": "dispositions",
+                "variable": "dispositions[_i1]",
                 "object": "IdentifiedEntityDispositionInformations"
             }
         ]
@@ -6179,6 +6285,11 @@
                 "name": "disposition",
                 "type": "IdentifiedEntityDispositionInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "IdentifiedEntityDispositionInformations"
+            }
         ]
     },
     {
@@ -6190,6 +6301,11 @@
             {
                 "name": "orientation",
                 "type": "ActorOrientation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "ActorOrientation"
             }
         ]
     },
@@ -6228,7 +6344,7 @@
                 "variable": "orientations.length"
             },
             {
-                "variable": "orientations",
+                "variable": "orientations[_i1]",
                 "object": "ActorOrientation"
             }
         ]
@@ -6372,7 +6488,7 @@
                 "variable": "monsterBoosts.length"
             },
             {
-                "variable": "monsterBoosts",
+                "variable": "monsterBoosts[_i1]",
                 "object": "MonsterBoosts"
             },
             {
@@ -6380,7 +6496,7 @@
                 "variable": "familyBoosts.length"
             },
             {
-                "variable": "familyBoosts",
+                "variable": "familyBoosts[_i2]",
                 "object": "MonsterBoosts"
             }
         ]
@@ -6597,7 +6713,7 @@
                 "variable": "namedPartyTeamsOutcomes.length"
             },
             {
-                "variable": "namedPartyTeamsOutcomes",
+                "variable": "namedPartyTeamsOutcomes[_i5]",
                 "object": "NamedPartyTeamWithOutcome"
             }
         ]
@@ -7139,7 +7255,7 @@
                 "variable": "spellCooldowns.length"
             },
             {
-                "variable": "spellCooldowns",
+                "variable": "spellCooldowns[_i1]",
                 "object": "GameFightSpellCooldown"
             },
             {
@@ -7172,7 +7288,7 @@
                 "variable": "slavesInfo.length"
             },
             {
-                "variable": "slavesInfo",
+                "variable": "slavesInfo[_i1]",
                 "object": "GameFightResumeSlaveInfo"
             }
         ]
@@ -7214,7 +7330,7 @@
                 "variable": "effects.length"
             },
             {
-                "variable": "effects",
+                "variable": "effects[_i1]",
                 "object": "FightDispellableEffectExtendedInformations"
             },
             {
@@ -7222,7 +7338,7 @@
                 "variable": "marks.length"
             },
             {
-                "variable": "marks",
+                "variable": "marks[_i2]",
                 "object": "GameActionMark"
             },
             {
@@ -7238,7 +7354,7 @@
                 "variable": "idols.length"
             },
             {
-                "variable": "idols",
+                "variable": "idols[_i5]",
                 "object": "Idol"
             },
             {
@@ -7246,7 +7362,7 @@
                 "variable": "fxTriggerCounts.length"
             },
             {
-                "variable": "fxTriggerCounts",
+                "variable": "fxTriggerCounts[_i6]",
                 "object": "GameFightEffectTriggerCount"
             }
         ]
@@ -7289,7 +7405,7 @@
                 "variable": "namedPartyTeams.length"
             },
             {
-                "variable": "namedPartyTeams",
+                "variable": "namedPartyTeams[_i1]",
                 "object": "NamedPartyTeam"
             }
         ]
@@ -7373,7 +7489,7 @@
                 "variable": "idols.length"
             },
             {
-                "variable": "idols",
+                "variable": "idols[_i1]",
                 "object": "Idol"
             }
         ]
@@ -7578,6 +7694,9 @@
             {
                 "type": "VarShort",
                 "variable": "fightId"
+            },
+            {
+                "object": "FightTeamInformations"
             }
         ]
     },
@@ -7600,6 +7719,9 @@
             {
                 "type": "Double",
                 "variable": "fighterId"
+            },
+            {
+                "object": "GameFightCharacteristics"
             }
         ]
     },
@@ -7678,8 +7800,11 @@
                 "variable": "slaveSpells.length"
             },
             {
-                "variable": "slaveSpells",
+                "variable": "slaveSpells[_i4]",
                 "object": "SpellItem"
+            },
+            {
+                "object": "CharacterCharacteristicsInformations"
             },
             {
                 "type": "Short",
@@ -7706,6 +7831,11 @@
             {
                 "name": "leaver",
                 "type": "CharacterBasicMinimalInformations;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "CharacterBasicMinimalInformations"
             }
         ]
     },
@@ -7933,6 +8063,11 @@
                 "name": "paddockItemDescription",
                 "type": "PaddockItem;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "PaddockItem"
+            }
         ]
     },
     {
@@ -7952,7 +8087,7 @@
                 "variable": "paddockItemDescription.length"
             },
             {
-                "variable": "paddockItemDescription",
+                "variable": "paddockItemDescription[_i1]",
                 "object": "PaddockItem"
             }
         ]
@@ -8002,6 +8137,11 @@
             {
                 "name": "mountData",
                 "type": "MountClientData;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "MountClientData"
             }
         ]
     },
@@ -8266,6 +8406,11 @@
             {
                 "name": "mountData",
                 "type": "MountClientData;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "MountClientData"
             }
         ]
     },
@@ -8570,7 +8715,7 @@
                 "variable": "subareas.length"
             },
             {
-                "variable": "subareas",
+                "variable": "subareas[_i1]",
                 "object": "AnomalySubareaInformation"
             }
         ]
@@ -8781,6 +8926,9 @@
                 "parent": "MapComplementaryInformationsDataMessage"
             },
             {
+                "object": "CharacterMinimalInformations"
+            },
+            {
                 "type": "Byte",
                 "variable": "theme"
             },
@@ -8808,6 +8956,9 @@
         "attr_write": [
             {
                 "parent": "MapComplementaryInformationsDataMessage"
+            },
+            {
+                "object": "HouseInformationsInside"
             }
         ]
     },
@@ -8896,7 +9047,7 @@
                 "variable": "statedElements.length"
             },
             {
-                "variable": "statedElements",
+                "variable": "statedElements[_i6]",
                 "object": "StatedElement"
             },
             {
@@ -8904,7 +9055,7 @@
                 "variable": "obstacles.length"
             },
             {
-                "variable": "obstacles",
+                "variable": "obstacles[_i7]",
                 "object": "MapObstacle"
             },
             {
@@ -8912,12 +9063,15 @@
                 "variable": "fights.length"
             },
             {
-                "variable": "fights",
+                "variable": "fights[_i8]",
                 "object": "FightCommonInformations"
             },
             {
                 "type": "Boolean",
                 "variable": "hasAggressiveMonsters"
+            },
+            {
+                "object": "FightStartingPositions"
             }
         ]
     },
@@ -8987,6 +9141,9 @@
             {
                 "type": "Double",
                 "variable": "mapId"
+            },
+            {
+                "object": "FightStartingPositions"
             }
         ]
     },
@@ -9025,7 +9182,7 @@
                 "variable": "obstacles.length"
             },
             {
-                "variable": "obstacles",
+                "variable": "obstacles[_i1]",
                 "object": "MapObstacle"
             }
         ]
@@ -9050,7 +9207,7 @@
                 "variable": "namedPartyTeams.length"
             },
             {
-                "variable": "namedPartyTeams",
+                "variable": "namedPartyTeams[_i1]",
                 "object": "NamedPartyTeam"
             }
         ]
@@ -9132,7 +9289,7 @@
                 "variable": "fights.length"
             },
             {
-                "variable": "fights",
+                "variable": "fights[_i1]",
                 "object": "FightExternalInformations"
             }
         ]
@@ -9210,7 +9367,7 @@
                 "variable": "effortProgressions.length"
             },
             {
-                "variable": "effortProgressions",
+                "variable": "effortProgressions[_i1]",
                 "object": "AlignmentWarEffortInformation"
             }
         ]
@@ -9311,6 +9468,11 @@
             {
                 "name": "bonus",
                 "type": "ObjectEffectInteger;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectEffectInteger"
             }
         ]
     },
@@ -9489,11 +9651,14 @@
         ],
         "attr_write": [
             {
+                "object": "CharacterMinimalInformations"
+            },
+            {
                 "type": "Short",
                 "variable": "bonuses.length"
             },
             {
-                "variable": "bonuses",
+                "variable": "bonuses[_i2]",
                 "object": "ObjectEffectInteger"
             },
             {
@@ -9629,6 +9794,11 @@
                 "name": "host",
                 "type": "CharacterMinimalInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            }
         ]
     },
     {
@@ -9647,6 +9817,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            },
             {
                 "type": "VarInt",
                 "variable": "timeLeftBeforeCancel"
@@ -9692,6 +9865,9 @@
         ],
         "attr_write": [
             {
+                "object": "CharacterMinimalInformations"
+            },
+            {
                 "type": "Boolean",
                 "variable": "accept"
             }
@@ -9731,6 +9907,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            },
             {
                 "type": "Boolean",
                 "variable": "kicked"
@@ -9798,7 +9977,7 @@
                 "variable": "rewards.length"
             },
             {
-                "variable": "rewards",
+                "variable": "rewards[_i1]",
                 "object": "BreachReward"
             }
         ]
@@ -10442,6 +10621,11 @@
                 "name": "commonsInfos",
                 "type": "FightCommonInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "FightCommonInformations"
+            }
         ]
     },
     {
@@ -10559,7 +10743,7 @@
                 "variable": "candidates.length"
             },
             {
-                "variable": "candidates",
+                "variable": "candidates[_i1]",
                 "object": "LeagueFriendInformations"
             }
         ]
@@ -10814,6 +10998,12 @@
         "attr_write": [
             {
                 "parent": "GameRolePlayArenaUpdatePlayerInfosMessage"
+            },
+            {
+                "object": "ArenaRankInfos"
+            },
+            {
+                "object": "ArenaRankInfos"
             }
         ]
     },
@@ -10826,6 +11016,11 @@
             {
                 "name": "solo",
                 "type": "ArenaRankInfos;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "ArenaRankInfos"
             }
         ]
     },
@@ -10962,7 +11157,7 @@
                 "variable": "furnituresInfos.length"
             },
             {
-                "variable": "furnituresInfos",
+                "variable": "furnituresInfos[_i1]",
                 "object": "HavenBagFurnitureInformation"
             }
         ]
@@ -11060,7 +11255,7 @@
                 "variable": "roomsPreview.length"
             },
             {
-                "variable": "roomsPreview",
+                "variable": "roomsPreview[_i2]",
                 "object": "HavenBagRoomPreviewInformation"
             }
         ]
@@ -11135,6 +11330,11 @@
                 "name": "hostInformations",
                 "type": "CharacterMinimalInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            }
         ]
     },
     {
@@ -11153,6 +11353,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            },
             {
                 "type": "Boolean",
                 "variable": "accept"
@@ -11175,6 +11378,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "CharacterMinimalInformations"
+            },
             {
                 "type": "VarInt",
                 "variable": "timeLeftBeforeCancel"
@@ -11234,7 +11440,7 @@
                 "variable": "houses.length"
             },
             {
-                "variable": "houses",
+                "variable": "houses[_i1]",
                 "object": "AccountHouseInformations"
             }
         ]
@@ -11442,6 +11648,9 @@
             {
                 "type": "VarLong",
                 "variable": "realPrice"
+            },
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -11570,7 +11779,7 @@
                 "variable": "houseList.length"
             },
             {
-                "variable": "houseList",
+                "variable": "houseList[_i3]",
                 "object": "HouseInformationsForSell"
             }
         ]
@@ -11666,6 +11875,9 @@
             {
                 "type": "Boolean",
                 "variable": "secondHand"
+            },
+            {
+                "object": "GuildInformations"
             },
             {
                 "type": "VarInt",
@@ -11776,7 +11988,7 @@
                 "variable": "subscriptions.length"
             },
             {
-                "variable": "subscriptions",
+                "variable": "subscriptions[_i1]",
                 "object": "JobBookSubscription"
             }
         ]
@@ -11791,6 +12003,11 @@
                 "name": "listEntry",
                 "type": "JobCrafterDirectoryListEntry;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "JobCrafterDirectoryListEntry"
+            }
         ]
     },
     {
@@ -11802,6 +12019,11 @@
             {
                 "name": "settings",
                 "type": "JobCrafterDirectorySettings;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "JobCrafterDirectorySettings"
             }
         ]
     },
@@ -11826,12 +12048,18 @@
         ],
         "attr_write": [
             {
+                "object": "JobCrafterDirectoryEntryPlayerInfo"
+            },
+            {
                 "type": "Short",
                 "variable": "jobInfoList.length"
             },
             {
-                "variable": "jobInfoList",
+                "variable": "jobInfoList[_i2]",
                 "object": "JobCrafterDirectoryEntryJobInfo"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -11870,7 +12098,7 @@
                 "variable": "listEntries.length"
             },
             {
-                "variable": "listEntries",
+                "variable": "listEntries[_i1]",
                 "object": "JobCrafterDirectoryListEntry"
             }
         ]
@@ -11936,7 +12164,7 @@
                 "variable": "craftersSettings.length"
             },
             {
-                "variable": "craftersSettings",
+                "variable": "craftersSettings[_i1]",
                 "object": "JobCrafterDirectorySettings"
             }
         ]
@@ -11958,7 +12186,7 @@
                 "variable": "jobsDescription.length"
             },
             {
-                "variable": "jobsDescription",
+                "variable": "jobsDescription[_i1]",
                 "object": "JobDescription"
             }
         ]
@@ -11980,7 +12208,7 @@
                 "variable": "experiencesUpdate.length"
             },
             {
-                "variable": "experiencesUpdate",
+                "variable": "experiencesUpdate[_i1]",
                 "object": "JobExperience"
             }
         ]
@@ -12016,6 +12244,11 @@
                 "name": "experiencesUpdate",
                 "type": "JobExperience;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "JobExperience"
+            }
         ]
     },
     {
@@ -12037,6 +12270,9 @@
             {
                 "type": "Byte",
                 "variable": "newLevel"
+            },
+            {
+                "object": "JobDescription"
             }
         ]
     },
@@ -12257,6 +12493,9 @@
         "attr_write": [
             {
                 "parent": "TaxCollectorDialogQuestionExtendedMessage"
+            },
+            {
+                "object": "BasicNamedAllianceInformations"
             }
         ]
     },
@@ -12315,7 +12554,7 @@
                 "variable": "mapInfo.length"
             },
             {
-                "variable": "mapInfo",
+                "variable": "mapInfo[_i1]",
                 "object": "MapNpcQuestInfo"
             }
         ]
@@ -12476,6 +12715,11 @@
             {
                 "name": "guildInfo",
                 "type": "BasicGuildInformations;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "BasicGuildInformations"
             }
         ]
     },
@@ -12696,6 +12940,11 @@
                 "name": "properties",
                 "type": "PaddockInstancesInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "PaddockInstancesInformations"
+            }
         ]
     },
     {
@@ -12815,7 +13064,7 @@
                 "variable": "paddockList.length"
             },
             {
-                "variable": "paddockList",
+                "variable": "paddockList[_i3]",
                 "object": "PaddockInformationsForSell"
             }
         ]
@@ -13067,7 +13316,7 @@
                 "variable": "players.length"
             },
             {
-                "variable": "players",
+                "variable": "players[_i2]",
                 "object": "DungeonPartyFinderPlayer"
             }
         ]
@@ -13101,7 +13350,7 @@
                 "variable": "addedPlayers.length"
             },
             {
-                "variable": "addedPlayers",
+                "variable": "addedPlayers[_i2]",
                 "object": "DungeonPartyFinderPlayer"
             },
             {
@@ -13407,7 +13656,7 @@
                 "variable": "guests.length"
             },
             {
-                "variable": "guests",
+                "variable": "guests[_i7]",
                 "object": "PartyGuestInformations"
             }
         ]
@@ -13641,7 +13890,7 @@
                 "variable": "guests.length"
             },
             {
-                "variable": "guests",
+                "variable": "guests[_i5]",
                 "object": "PartyGuestInformations"
             },
             {
@@ -13759,7 +14008,7 @@
                 "variable": "geopositions.length"
             },
             {
-                "variable": "geopositions",
+                "variable": "geopositions[_i1]",
                 "object": "PartyMemberGeoPosition"
             }
         ]
@@ -13831,6 +14080,9 @@
         "attr_write": [
             {
                 "parent": "AbstractPartyMemberInFightMessage"
+            },
+            {
+                "object": "MapCoordinatesExtended"
             }
         ]
     },
@@ -13953,6 +14205,9 @@
         "attr_write": [
             {
                 "parent": "AbstractPartyEventMessage"
+            },
+            {
+                "object": "PartyGuestInformations"
             }
         ]
     },
@@ -14249,7 +14504,7 @@
                 "variable": "quests.length"
             },
             {
-                "variable": "quests",
+                "variable": "quests[_i1]",
                 "object": "QuestActiveDetailedInformations"
             }
         ]
@@ -15091,7 +15346,7 @@
                 "variable": "flags.length"
             },
             {
-                "variable": "flags",
+                "variable": "flags[_i8]",
                 "object": "TreasureHuntFlag"
             }
         ]
@@ -15253,7 +15508,7 @@
                 "variable": "entities.length"
             },
             {
-                "variable": "entities",
+                "variable": "entities[_i1]",
                 "object": "EntityInformation"
             }
         ]
@@ -15267,6 +15522,11 @@
             {
                 "name": "entity",
                 "type": "EntityInformation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "EntityInformation"
             }
         ]
     },
@@ -15295,7 +15555,7 @@
                 "variable": "meal.length"
             },
             {
-                "variable": "meal",
+                "variable": "meal[_i2]",
                 "object": "ObjectItemQuantity"
             }
         ]
@@ -15317,7 +15577,7 @@
                 "variable": "finishMoves.length"
             },
             {
-                "variable": "finishMoves",
+                "variable": "finishMoves[_i1]",
                 "object": "FinishMoveInformations"
             }
         ]
@@ -15509,6 +15769,9 @@
             {
                 "type": "Boolean",
                 "variable": "success"
+            },
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -15863,6 +16126,9 @@
             {
                 "type": "Byte",
                 "variable": "_box0"
+            },
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -16220,7 +16486,7 @@
                 "variable": "contributions.length"
             },
             {
-                "variable": "contributions",
+                "variable": "contributions[_i1]",
                 "object": "Contribution"
             }
         ]
@@ -16286,6 +16552,9 @@
             {
                 "type": "UTF",
                 "variable": "guildName"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -16348,7 +16617,7 @@
                 "variable": "members.length"
             },
             {
-                "variable": "members",
+                "variable": "members[_i4]",
                 "object": "CharacterMinimalGuildPublicInformations"
             }
         ]
@@ -16446,7 +16715,7 @@
                 "variable": "housesInformations.length"
             },
             {
-                "variable": "housesInformations",
+                "variable": "housesInformations[_i1]",
                 "object": "HouseInformationsForGuild"
             }
         ]
@@ -16460,6 +16729,11 @@
             {
                 "name": "housesInformations",
                 "type": "HouseInformationsForGuild;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "HouseInformationsForGuild"
             }
         ]
     },
@@ -16477,6 +16751,9 @@
         "attr_write": [
             {
                 "parent": "GuildFactsMessage"
+            },
+            {
+                "object": "BasicNamedAllianceInformations"
             }
         ]
     },
@@ -16571,7 +16848,7 @@
                 "variable": "members.length"
             },
             {
-                "variable": "members",
+                "variable": "members[_i1]",
                 "object": "GuildMember"
             }
         ]
@@ -16585,6 +16862,11 @@
             {
                 "name": "member",
                 "type": "GuildMember;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildMember"
             }
         ]
     },
@@ -16613,7 +16895,7 @@
                 "variable": "paddocksInformations.length"
             },
             {
-                "variable": "paddocksInformations",
+                "variable": "paddocksInformations[_i2]",
                 "object": "PaddockContentInformations"
             }
         ]
@@ -16841,6 +17123,9 @@
             {
                 "type": "UTF",
                 "variable": "recruterName"
+            },
+            {
+                "object": "GuildInformations"
             }
         ]
     },
@@ -16878,6 +17163,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "GuildInformations"
+            },
             {
                 "type": "VarInt",
                 "variable": "rankId"
@@ -16943,7 +17231,7 @@
                 "variable": "guilds.length"
             },
             {
-                "variable": "guilds",
+                "variable": "guilds[_i1]",
                 "object": "GuildInformations"
             }
         ]
@@ -17021,6 +17309,11 @@
                 "name": "guildEmblem",
                 "type": "GuildEmblem;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildEmblem"
+            }
         ]
     },
     {
@@ -17082,6 +17375,9 @@
             {
                 "type": "UTF",
                 "variable": "guildName"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -17138,6 +17434,11 @@
                 "name": "paddockInfo",
                 "type": "PaddockContentInformations;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "PaddockContentInformations"
+            }
         ]
     },
     {
@@ -17193,7 +17494,7 @@
                 "variable": "ranks.length"
             },
             {
-                "variable": "ranks",
+                "variable": "ranks[_i1]",
                 "object": "GuildRankInformation"
             }
         ]
@@ -17260,7 +17561,7 @@
                 "variable": "guilds.length"
             },
             {
-                "variable": "guilds",
+                "variable": "guilds[_i1]",
                 "object": "GuildFactSheetInformations"
             }
         ]
@@ -17400,6 +17701,11 @@
                 "name": "tab",
                 "type": "UpdatedStorageTabInformation;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "UpdatedStorageTabInformation"
+            }
         ]
     },
     {
@@ -17491,7 +17797,7 @@
                 "variable": "ranks.length"
             },
             {
-                "variable": "ranks",
+                "variable": "ranks[_i1]",
                 "object": "GuildRankInformation"
             }
         ]
@@ -17505,6 +17811,11 @@
             {
                 "name": "rank",
                 "type": "GuildRankInformation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildRankInformation"
             }
         ]
     },
@@ -17601,6 +17912,9 @@
             {
                 "type": "Boolean",
                 "variable": "accepted"
+            },
+            {
+                "object": "GuildInformations"
             }
         ]
     },
@@ -17680,7 +17994,7 @@
                 "variable": "applies.length"
             },
             {
-                "variable": "applies",
+                "variable": "applies[_i1]",
                 "object": "GuildApplicationInformation"
             }
         ]
@@ -17705,6 +18019,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "GuildApplicationInformation"
+            },
             {
                 "type": "Byte",
                 "variable": "state"
@@ -17750,6 +18067,12 @@
         "attr_write": [
             {
                 "parent": "GuildPlayerApplicationAbstractMessage"
+            },
+            {
+                "object": "GuildInformations"
+            },
+            {
+                "object": "GuildApplicationInformation"
             }
         ]
     },
@@ -18039,6 +18362,11 @@
                 "name": "recruitmentData",
                 "type": "GuildRecruitmentInformation;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildRecruitmentInformation"
+            }
         ]
     },
     {
@@ -18050,6 +18378,11 @@
             {
                 "name": "recruitmentData",
                 "type": "GuildRecruitmentInformation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "GuildRecruitmentInformation"
             }
         ]
     },
@@ -18150,7 +18483,7 @@
                 "variable": "playerInfo.length"
             },
             {
-                "variable": "playerInfo",
+                "variable": "playerInfo[_i2]",
                 "object": "CharacterMinimalPlusLookInformations"
             }
         ]
@@ -18200,6 +18533,9 @@
             {
                 "type": "Double",
                 "variable": "fightId"
+            },
+            {
+                "object": "CharacterMinimalPlusLookInformations"
             }
         ]
     },
@@ -18309,6 +18645,9 @@
             {
                 "type": "VarShort",
                 "variable": "subAreaId"
+            },
+            {
+                "object": "BasicGuildInformations"
             }
         ]
     },
@@ -18335,6 +18674,12 @@
             {
                 "type": "Boolean",
                 "variable": "deadOrAlive"
+            },
+            {
+                "object": "TaxCollectorBasicInformations"
+            },
+            {
+                "object": "BasicGuildInformations"
             }
         ]
     },
@@ -18388,7 +18733,7 @@
                 "variable": "fightersInformations.length"
             },
             {
-                "variable": "fightersInformations",
+                "variable": "fightersInformations[_i2]",
                 "object": "TaxCollectorFightersInformation"
             },
             {
@@ -18444,6 +18789,9 @@
                 "variable": "movementType"
             },
             {
+                "object": "TaxCollectorBasicInformations"
+            },
+            {
                 "type": "VarLong",
                 "variable": "playerId"
             },
@@ -18488,7 +18836,7 @@
                 "variable": "movements.length"
             },
             {
-                "variable": "movements",
+                "variable": "movements[_i1]",
                 "object": "TaxCollectorMovement"
             }
         ]
@@ -18669,6 +19017,11 @@
             {
                 "name": "partyIdol",
                 "type": "PartyIdol;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "PartyIdol"
             }
         ]
     },
@@ -18867,6 +19220,9 @@
             {
                 "type": "Double",
                 "variable": "actorId"
+            },
+            {
+                "object": "ActorRestrictionsInformations"
             }
         ]
     },
@@ -18879,6 +19235,11 @@
             {
                 "name": "interactiveElement",
                 "type": "InteractiveElement;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "InteractiveElement"
             }
         ]
     },
@@ -19042,6 +19403,11 @@
                 "name": "statedElement",
                 "type": "StatedElement;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "StatedElement"
+            }
         ]
     },
     {
@@ -19061,7 +19427,7 @@
                 "variable": "statedElements.length"
             },
             {
-                "variable": "statedElements",
+                "variable": "statedElements[_i1]",
                 "object": "StatedElement"
             }
         ]
@@ -19506,7 +19872,7 @@
                 "variable": "destinations.length"
             },
             {
-                "variable": "destinations",
+                "variable": "destinations[_i2]",
                 "object": "TeleportDestination"
             }
         ]
@@ -19625,7 +19991,7 @@
                 "variable": "tabs.length"
             },
             {
-                "variable": "tabs",
+                "variable": "tabs[_i1]",
                 "object": "StorageTabInformation"
             }
         ]
@@ -19693,7 +20059,7 @@
                 "variable": "results.length"
             },
             {
-                "variable": "results",
+                "variable": "results[_i1]",
                 "object": "DecraftedItemStackInfo"
             }
         ]
@@ -19715,7 +20081,7 @@
                 "variable": "recycledItems.length"
             },
             {
-                "variable": "recycledItems",
+                "variable": "recycledItems[_i1]",
                 "object": "RecycledItem"
             }
         ]
@@ -19935,6 +20301,11 @@
                 "name": "itemInfo",
                 "type": "ObjectItemToSellInBid;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectItemToSellInBid"
+            }
         ]
     },
     {
@@ -20068,7 +20439,7 @@
                 "variable": "items.length"
             },
             {
-                "variable": "items",
+                "variable": "items[_i1]",
                 "object": "ObjectItemGenericQuantity"
             }
         ]
@@ -20313,6 +20684,9 @@
         "attr_write": [
             {
                 "parent": "ExchangeCraftResultMessage"
+            },
+            {
+                "object": "ObjectItemNotInContainer"
             }
         ]
     },
@@ -20452,7 +20826,7 @@
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i11]",
                 "object": "ObjectItemGenericQuantity"
             }
         ]
@@ -20629,7 +21003,7 @@
                 "variable": "mountDescription.length"
             },
             {
-                "variable": "mountDescription",
+                "variable": "mountDescription[_i1]",
                 "object": "MountClientData"
             }
         ]
@@ -20673,7 +21047,7 @@
                 "variable": "mountDescription.length"
             },
             {
-                "variable": "mountDescription",
+                "variable": "mountDescription[_i1]",
                 "object": "MountClientData"
             }
         ]
@@ -20815,6 +21189,9 @@
         "attr_write": [
             {
                 "parent": "ExchangeObjectMessage"
+            },
+            {
+                "object": "ObjectItem"
             }
         ]
     },
@@ -20966,7 +21343,7 @@
                 "variable": "object.length"
             },
             {
-                "variable": "object",
+                "variable": "object[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -21120,7 +21497,7 @@
                 "variable": "bidHouseItems.length"
             },
             {
-                "variable": "bidHouseItems",
+                "variable": "bidHouseItems[_i1]",
                 "object": "ObjectItemQuantityPriceDateEffects"
             },
             {
@@ -21128,7 +21505,7 @@
                 "variable": "merchantItems.length"
             },
             {
-                "variable": "merchantItems",
+                "variable": "merchantItems[_i2]",
                 "object": "ObjectItemQuantityPriceDateEffects"
             }
         ]
@@ -21462,6 +21839,11 @@
                 "name": "objectInfo",
                 "type": "ObjectItemToSell;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectItemToSell"
+            }
         ]
     },
     {
@@ -21503,7 +21885,7 @@
                 "variable": "objectInfoList.length"
             },
             {
-                "variable": "objectInfoList",
+                "variable": "objectInfoList[_i1]",
                 "object": "ObjectItemToSell"
             }
         ]
@@ -21525,7 +21907,7 @@
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i1]",
                 "object": "ObjectItemToSell"
             }
         ]
@@ -21552,6 +21934,11 @@
                 "name": "buyerDescriptor",
                 "type": "SellerBuyerDescriptor;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "SellerBuyerDescriptor"
+            }
         ]
     },
     {
@@ -21571,11 +21958,14 @@
         ],
         "attr_write": [
             {
+                "object": "SellerBuyerDescriptor"
+            },
+            {
                 "type": "Short",
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i2]",
                 "object": "ObjectItemToSellInBid"
             }
         ]
@@ -21615,7 +22005,7 @@
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -21641,7 +22031,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             },
             {
@@ -21819,7 +22209,7 @@
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i2]",
                 "object": "ObjectItemToSellInHumanVendorShop"
             }
         ]
@@ -21866,7 +22256,7 @@
                 "variable": "paddockedMountsDescription.length"
             },
             {
-                "variable": "paddockedMountsDescription",
+                "variable": "paddockedMountsDescription[_i1]",
                 "object": "MountClientData"
             }
         ]
@@ -21888,7 +22278,7 @@
                 "variable": "stabledMountsDescription.length"
             },
             {
-                "variable": "stabledMountsDescription",
+                "variable": "stabledMountsDescription[_i1]",
                 "object": "MountClientData"
             }
         ]
@@ -21970,7 +22360,7 @@
                 "variable": "objectsInfos.length"
             },
             {
-                "variable": "objectsInfos",
+                "variable": "objectsInfos[_i3]",
                 "object": "ObjectItemToSellInNpcShop"
             }
         ]
@@ -22106,7 +22496,7 @@
                 "variable": "itemTypeDescriptions.length"
             },
             {
-                "variable": "itemTypeDescriptions",
+                "variable": "itemTypeDescriptions[_i3]",
                 "object": "BidExchangerObjectInfo"
             }
         ]
@@ -22331,6 +22721,9 @@
         "attr_write": [
             {
                 "parent": "ExchangeObjectMessage"
+            },
+            {
+                "object": "ObjectItem"
             }
         ]
     },
@@ -22348,6 +22741,9 @@
         "attr_write": [
             {
                 "parent": "ExchangeObjectMessage"
+            },
+            {
+                "object": "ObjectItem"
             }
         ]
     },
@@ -22365,6 +22761,9 @@
         "attr_write": [
             {
                 "parent": "ExchangeObjectMessage"
+            },
+            {
+                "object": "ObjectItem"
             }
         ]
     },
@@ -22430,7 +22829,7 @@
                 "variable": "object.length"
             },
             {
-                "variable": "object",
+                "variable": "object[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -22499,6 +22898,11 @@
                 "name": "gold",
                 "type": "GoldItem;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "GoldItem"
+            }
         ]
     },
     {
@@ -22522,7 +22926,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "ObjectItem"
             },
             {
@@ -22810,6 +23214,11 @@
                 "name": "result",
                 "type": "ObjectItem;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectItem"
+            }
         ]
     },
     {
@@ -22828,6 +23237,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "ObjectItem"
+            },
             {
                 "type": "Byte",
                 "variable": "origin"
@@ -22950,6 +23362,11 @@
                 "name": "object",
                 "type": "ObjectItem;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectItem"
+            }
         ]
     },
     {
@@ -23029,7 +23446,7 @@
                 "variable": "object.length"
             },
             {
-                "variable": "object",
+                "variable": "object[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -23107,7 +23524,7 @@
                 "variable": "objectsUIDAndQty.length"
             },
             {
-                "variable": "objectsUIDAndQty",
+                "variable": "objectsUIDAndQty[_i1]",
                 "object": "ObjectItemQuantity"
             }
         ]
@@ -23447,7 +23864,7 @@
                 "variable": "spells.length"
             },
             {
-                "variable": "spells",
+                "variable": "spells[_i2]",
                 "object": "SpellItem"
             }
         ]
@@ -23538,7 +23955,7 @@
                 "variable": "objectList.length"
             },
             {
-                "variable": "objectList",
+                "variable": "objectList[_i1]",
                 "object": "ObjectItem"
             }
         ]
@@ -23552,6 +23969,11 @@
             {
                 "name": "object",
                 "type": "ObjectItem;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "ObjectItem"
             }
         ]
     },
@@ -23582,6 +24004,11 @@
             {
                 "name": "look",
                 "type": "EntityLook;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -23786,6 +24213,9 @@
             {
                 "type": "Short",
                 "variable": "presetId"
+            },
+            {
+                "object": "ItemForPreset"
             }
         ]
     },
@@ -23991,6 +24421,11 @@
             {
                 "name": "fight",
                 "type": "PrismFightersInformation;"
+            }
+        ],
+        "attr_write": [
+            {
+                "object": "PrismFightersInformation"
             }
         ]
     },
@@ -24359,7 +24794,7 @@
                 "variable": "fights.length"
             },
             {
-                "variable": "fights",
+                "variable": "fights[_i1]",
                 "object": "PrismFightersInformation"
             }
         ]
@@ -25023,6 +25458,9 @@
             {
                 "type": "VarLong",
                 "variable": "playerId"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -25170,6 +25608,11 @@
                 "name": "newAction",
                 "type": "StartupActionAddObject;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "StartupActionAddObject"
+            }
         ]
     },
     {
@@ -25243,7 +25686,7 @@
                 "variable": "actions.length"
             },
             {
-                "variable": "actions",
+                "variable": "actions[_i1]",
                 "object": "StartupActionAddObject"
             }
         ]
@@ -25932,7 +26375,7 @@
                 "variable": "buffers.length"
             },
             {
-                "variable": "buffers",
+                "variable": "buffers[_i1]",
                 "object": "BufferInformation"
             }
         ]
@@ -26292,6 +26735,9 @@
         "attr_write": [
             {
                 "parent": "AbstractPlayerSearchInformation"
+            },
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -26513,7 +26959,7 @@
                 "variable": "finishedObjective.length"
             },
             {
-                "variable": "finishedObjective",
+                "variable": "finishedObjective[_i2]",
                 "object": "AchievementObjective"
             },
             {
@@ -26521,7 +26967,7 @@
                 "variable": "startedObjectives.length"
             },
             {
-                "variable": "startedObjectives",
+                "variable": "startedObjectives[_i3]",
                 "object": "AchievementStartedObjective"
             }
         ]
@@ -26947,7 +27393,7 @@
                 "variable": "cells.length"
             },
             {
-                "variable": "cells",
+                "variable": "cells[_i8]",
                 "object": "GameActionMarkedCell"
             },
             {
@@ -27132,6 +27578,9 @@
         "attr_write": [
             {
                 "parent": "CharacterMinimalGuildInformations"
+            },
+            {
+                "object": "BasicAllianceInformations"
             }
         ]
     },
@@ -27149,6 +27598,9 @@
         "attr_write": [
             {
                 "parent": "CharacterMinimalPlusLookInformations"
+            },
+            {
+                "object": "BasicGuildInformations"
             }
         ]
     },
@@ -27166,6 +27618,9 @@
         "attr_write": [
             {
                 "parent": "CharacterMinimalInformations"
+            },
+            {
+                "object": "GuildRankPublicInformation"
             }
         ]
     },
@@ -27229,6 +27684,9 @@
         "attr_write": [
             {
                 "parent": "CharacterMinimalInformations"
+            },
+            {
+                "object": "EntityLook"
             },
             {
                 "type": "Byte",
@@ -27539,6 +27997,9 @@
                 "variable": "kamas"
             },
             {
+                "object": "ActorExtendedAlignmentInformations"
+            },
+            {
                 "type": "VarShort",
                 "variable": "criticalHitWeapon"
             },
@@ -27555,7 +28016,7 @@
                 "variable": "spellModifications.length"
             },
             {
-                "variable": "spellModifications",
+                "variable": "spellModifications[_i9]",
                 "object": "CharacterSpellModification"
             },
             {
@@ -27612,6 +28073,9 @@
             {
                 "type": "VarShort",
                 "variable": "spellId"
+            },
+            {
+                "object": "CharacterCharacteristicDetailed"
             }
         ]
     },
@@ -28165,6 +28629,9 @@
         "attr_write": [
             {
                 "parent": "GameContextActorPositionInformations"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -28334,6 +28801,9 @@
         "attr_write": [
             {
                 "parent": "TaxCollectorStaticInformations"
+            },
+            {
+                "object": "AllianceInformations"
             }
         ]
     },
@@ -28368,6 +28838,9 @@
             {
                 "type": "VarShort",
                 "variable": "lastNameId"
+            },
+            {
+                "object": "GuildInformations"
             },
             {
                 "type": "VarLong",
@@ -28524,7 +28997,7 @@
                 "variable": "fightTeamsOptions.length"
             },
             {
-                "variable": "fightTeamsOptions",
+                "variable": "fightTeamsOptions[_i5]",
                 "object": "FightOptionsInformations"
             }
         ]
@@ -28600,7 +29073,7 @@
                 "variable": "objects.length"
             },
             {
-                "variable": "objects",
+                "variable": "objects[_i1]",
                 "object": "FightLootObject"
             },
             {
@@ -28836,6 +29309,9 @@
             {
                 "type": "Byte",
                 "variable": "wave"
+            },
+            {
+                "object": "FightLoot"
             }
         ]
     },
@@ -28972,6 +29448,9 @@
             {
                 "type": "Byte",
                 "variable": "level"
+            },
+            {
+                "object": "BasicGuildInformations"
             },
             {
                 "type": "Int",
@@ -29271,6 +29750,9 @@
         "attr_write": [
             {
                 "parent": "FightTeamMemberCharacterInformations"
+            },
+            {
+                "object": "BasicAllianceInformations"
             }
         ]
     },
@@ -29345,6 +29827,9 @@
                 "variable": "wave"
             },
             {
+                "object": "EntityLook"
+            },
+            {
                 "type": "Short",
                 "variable": "stats.getTypeId()"
             },
@@ -29401,6 +29886,9 @@
                 "variable": "level"
             },
             {
+                "object": "ActorAlignmentInformations"
+            },
+            {
                 "type": "Byte",
                 "variable": "breed"
             },
@@ -29434,6 +29922,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "CharacterCharacteristics"
+            },
             {
                 "type": "Double",
                 "variable": "summoner"
@@ -29576,6 +30067,9 @@
                 "parent": "GameContextActorInformations"
             },
             {
+                "object": "GameContextBasicSpawnInformation"
+            },
+            {
                 "type": "Byte",
                 "variable": "wave"
             },
@@ -29704,6 +30198,9 @@
                 "variable": "name"
             },
             {
+                "object": "PlayerStatus"
+            },
+            {
                 "type": "VarShort",
                 "variable": "leagueId"
             },
@@ -29818,6 +30315,9 @@
         "attr_write": [
             {
                 "parent": "GameFightMonsterInformations"
+            },
+            {
+                "object": "ActorAlignmentInformations"
             }
         ]
     },
@@ -29875,7 +30375,7 @@
                 "variable": "spellCooldowns.length"
             },
             {
-                "variable": "spellCooldowns",
+                "variable": "spellCooldowns[_i2]",
                 "object": "GameFightSpellCooldown"
             },
             {
@@ -30087,6 +30587,9 @@
         "attr_write": [
             {
                 "parent": "BasicNamedAllianceInformations"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -30115,7 +30618,7 @@
                 "variable": "monsters.length"
             },
             {
-                "variable": "monsters",
+                "variable": "monsters[_i2]",
                 "object": "MonsterInGroupLightInformations"
             }
         ]
@@ -30187,7 +30690,7 @@
                 "variable": "coords.length"
             },
             {
-                "variable": "coords",
+                "variable": "coords[_i2]",
                 "object": "MapCoordinatesExtended"
             }
         ]
@@ -30304,6 +30807,9 @@
         "attr_write": [
             {
                 "parent": "GameRolePlayHumanoidInformations"
+            },
+            {
+                "object": "ActorAlignmentInformations"
             }
         ]
     },
@@ -30585,6 +31091,9 @@
         "attr_write": [
             {
                 "parent": "GameRolePlayNpcInformations"
+            },
+            {
+                "object": "GameRolePlayNpcQuestFlag"
             }
         ]
     },
@@ -30668,11 +31177,14 @@
         ],
         "attr_write": [
             {
+                "object": "MonsterInGroupLightInformations"
+            },
+            {
                 "type": "Short",
                 "variable": "underlings.length"
             },
             {
-                "variable": "underlings",
+                "variable": "underlings[_i2]",
                 "object": "MonsterInGroupInformations"
             }
         ]
@@ -30697,7 +31209,7 @@
                 "variable": "alternatives.length"
             },
             {
-                "variable": "alternatives",
+                "variable": "alternatives[_i1]",
                 "object": "AlternativeMonstersInGroupLightInformations"
             }
         ]
@@ -30745,6 +31257,9 @@
         "attr_write": [
             {
                 "parent": "BasicGuildInformations"
+            },
+            {
+                "object": "GuildEmblem"
             }
         ]
     },
@@ -30768,6 +31283,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "ActorRestrictionsInformations"
+            },
             {
                 "type": "Boolean",
                 "variable": "sex"
@@ -30806,6 +31324,9 @@
         "attr_write": [
             {
                 "parent": "HumanOption"
+            },
+            {
+                "object": "AllianceInformations"
             },
             {
                 "type": "Byte",
@@ -30862,7 +31383,7 @@
                 "variable": "followingCharactersLook.length"
             },
             {
-                "variable": "followingCharactersLook",
+                "variable": "followingCharactersLook[_i1]",
                 "object": "IndexedEntityLook"
             }
         ]
@@ -30881,6 +31402,9 @@
         "attr_write": [
             {
                 "parent": "HumanOption"
+            },
+            {
+                "object": "GuildInformations"
             }
         ]
     },
@@ -31101,6 +31625,9 @@
         "attr_write": [
             {
                 "parent": "MonsterInGroupLightInformations"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -31239,7 +31766,7 @@
                 "variable": "bosses.length"
             },
             {
-                "variable": "bosses",
+                "variable": "bosses[_i3]",
                 "object": "MonsterInGroupLightInformations"
             },
             {
@@ -31259,7 +31786,7 @@
                 "variable": "monsters.length"
             },
             {
-                "variable": "monsters",
+                "variable": "monsters[_i7]",
                 "object": "MonsterInGroupLightInformations"
             }
         ]
@@ -31346,7 +31873,7 @@
                 "variable": "rewards.length"
             },
             {
-                "variable": "rewards",
+                "variable": "rewards[_i1]",
                 "object": "BreachReward"
             },
             {
@@ -31467,12 +31994,18 @@
                 "variable": "1"
             },
             {
+                "object": "ArenaRanking"
+            },
+            {
                 "type": "Byte",
                 "variable": "0"
             },
             {
                 "type": "Byte",
                 "variable": "1"
+            },
+            {
+                "object": "ArenaLeagueRanking"
             },
             {
                 "type": "VarShort",
@@ -31837,6 +32370,14 @@
                 "name": "jobInfo",
                 "type": "JobCrafterDirectoryEntryJobInfo;"
             }
+        ],
+        "attr_write": [
+            {
+                "object": "JobCrafterDirectoryEntryPlayerInfo"
+            },
+            {
+                "object": "JobCrafterDirectoryEntryJobInfo"
+            }
         ]
     },
     {
@@ -31990,7 +32531,7 @@
                 "variable": "questFlags.length"
             },
             {
-                "variable": "questFlags",
+                "variable": "questFlags[_i3]",
                 "object": "GameRolePlayNpcQuestFlag"
             }
         ]
@@ -32088,6 +32629,9 @@
         ],
         "attr_write": [
             {
+                "object": "NamedPartyTeam"
+            },
+            {
                 "type": "VarShort",
                 "variable": "outcome"
             }
@@ -32146,6 +32690,9 @@
                 "variable": "name"
             },
             {
+                "object": "EntityLook"
+            },
+            {
                 "type": "Byte",
                 "variable": "breed"
             },
@@ -32162,7 +32709,7 @@
                 "variable": "entities.length"
             },
             {
-                "variable": "entities",
+                "variable": "entities[_i8]",
                 "object": "PartyEntityBaseInformation"
             }
         ]
@@ -32219,7 +32766,7 @@
                 "variable": "entities.length"
             },
             {
-                "variable": "entities",
+                "variable": "entities[_i5]",
                 "object": "PartyEntityBaseInformation"
             }
         ]
@@ -32435,6 +32982,9 @@
             {
                 "type": "Byte",
                 "variable": "entityModelId"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -33174,6 +33724,9 @@
                 "variable": "price"
             },
             {
+                "object": "ObjectEffects"
+            },
+            {
                 "type": "Int",
                 "variable": "date"
             }
@@ -33807,7 +34360,7 @@
                 "variable": "effects.length"
             },
             {
-                "variable": "effects",
+                "variable": "effects[_i13]",
                 "object": "ObjectEffectInteger"
             },
             {
@@ -33954,6 +34507,9 @@
             {
                 "type": "Int",
                 "variable": "accountId"
+            },
+            {
+                "object": "AccountTagInformation"
             }
         ]
     },
@@ -34152,6 +34708,9 @@
                 "variable": "breed"
             },
             {
+                "object": "GuildInformations"
+            },
+            {
                 "type": "VarShort",
                 "variable": "moodSmileyId"
             },
@@ -34228,6 +34787,12 @@
             {
                 "type": "Byte",
                 "variable": "sex"
+            },
+            {
+                "object": "EntityLook"
+            },
+            {
+                "object": "GuildInformations"
             },
             {
                 "type": "Byte",
@@ -34530,6 +35095,9 @@
             {
                 "type": "Short",
                 "variable": "status.getTypeId()"
+            },
+            {
+                "object": "PlayerNote"
             }
         ]
     },
@@ -34746,6 +35314,9 @@
             {
                 "type": "UTF",
                 "variable": "accountNickname"
+            },
+            {
+                "object": "PlayerStatus"
             }
         ]
     },
@@ -34769,6 +35340,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "ApplicationPlayerInformation"
+            },
             {
                 "type": "UTF",
                 "variable": "applyText"
@@ -34861,6 +35435,9 @@
                 "variable": "quantity"
             },
             {
+                "object": "ObjectItemNotInContainer"
+            },
+            {
                 "type": "Int",
                 "variable": "sourceTabId"
             },
@@ -34929,6 +35506,9 @@
             {
                 "type": "UTF",
                 "variable": "playerName"
+            },
+            {
+                "object": "MapCoordinatesExtended"
             },
             {
                 "type": "Double",
@@ -35009,6 +35589,9 @@
                 "parent": "GuildLogbookEntryBasicInformation"
             },
             {
+                "object": "GuildRankMinimalInformation"
+            },
+            {
                 "type": "VarLong",
                 "variable": "sourcePlayerId"
             },
@@ -35048,6 +35631,9 @@
             {
                 "type": "Byte",
                 "variable": "rankActivityType"
+            },
+            {
+                "object": "GuildRankMinimalInformation"
             }
         ]
     },
@@ -35326,6 +35912,9 @@
         "attr_write": [
             {
                 "parent": "TaxCollectorComplementaryInformations"
+            },
+            {
+                "object": "BasicGuildInformations"
             }
         ]
     },
@@ -35390,6 +35979,9 @@
                 "variable": "lastNameId"
             },
             {
+                "object": "AdditionalTaxCollectorInformations"
+            },
+            {
                 "type": "Short",
                 "variable": "worldX"
             },
@@ -35404,6 +35996,9 @@
             {
                 "type": "Byte",
                 "variable": "state"
+            },
+            {
+                "object": "EntityLook"
             },
             {
                 "type": "Short",
@@ -35489,6 +36084,9 @@
                 "variable": "movementType"
             },
             {
+                "object": "TaxCollectorBasicInformations"
+            },
+            {
                 "type": "VarLong",
                 "variable": "playerId"
             },
@@ -35512,6 +36110,9 @@
         "attr_write": [
             {
                 "parent": "TaxCollectorComplementaryInformations"
+            },
+            {
+                "object": "ProtectedEntityWaitingForHelpInfo"
             }
         ]
     },
@@ -35608,6 +36209,9 @@
         "attr_write": [
             {
                 "parent": "HouseInstanceInformations"
+            },
+            {
+                "object": "GuildInformations"
             }
         ]
     },
@@ -35691,6 +36295,9 @@
             {
                 "type": "Boolean",
                 "variable": "secondHand"
+            },
+            {
+                "object": "AccountTagInformation"
             },
             {
                 "type": "Short",
@@ -35797,6 +36404,9 @@
             {
                 "type": "VarInt",
                 "variable": "modelId"
+            },
+            {
+                "object": "AccountTagInformation"
             },
             {
                 "type": "Boolean",
@@ -35930,6 +36540,9 @@
                 "variable": "instanceId"
             },
             {
+                "object": "AccountTagInformation"
+            },
+            {
                 "type": "VarLong",
                 "variable": "price"
             }
@@ -35967,7 +36580,7 @@
                 "variable": "houseInstances.length"
             },
             {
-                "variable": "houseInstances",
+                "variable": "houseInstances[_i2]",
                 "object": "HouseInstanceInformations"
             }
         ]
@@ -36567,7 +37180,7 @@
                 "variable": "subentities.length"
             },
             {
-                "variable": "subentities",
+                "variable": "subentities[_i5]",
                 "object": "SubEntity"
             }
         ]
@@ -36588,6 +37201,9 @@
             }
         ],
         "attr_write": [
+            {
+                "object": "EntityLook"
+            },
             {
                 "type": "Byte",
                 "variable": "index"
@@ -36621,6 +37237,9 @@
             {
                 "type": "Byte",
                 "variable": "bindingPointIndex"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -36923,7 +37542,7 @@
                 "variable": "effectList.length"
             },
             {
-                "variable": "effectList",
+                "variable": "effectList[_i34]",
                 "object": "ObjectEffectInteger"
             }
         ]
@@ -37116,7 +37735,7 @@
                 "variable": "mountsInformations.length"
             },
             {
-                "variable": "mountsInformations",
+                "variable": "mountsInformations[_i7]",
                 "object": "MountInformationsForPaddock"
             }
         ]
@@ -37143,6 +37762,9 @@
             {
                 "type": "Boolean",
                 "variable": "deserted"
+            },
+            {
+                "object": "GuildInformations"
             }
         ]
     },
@@ -37277,6 +37899,9 @@
         "attr_write": [
             {
                 "parent": "ObjectItemInRolePlay"
+            },
+            {
+                "object": "ItemDurability"
             }
         ]
     },
@@ -37354,11 +37979,14 @@
                 "parent": "Preset"
             },
             {
+                "object": "SpellsPreset"
+            },
+            {
                 "type": "Short",
                 "variable": "forgettableSpells.length"
             },
             {
-                "variable": "forgettableSpells",
+                "variable": "forgettableSpells[_i2]",
                 "object": "SpellForPreset"
             }
         ]
@@ -37383,7 +38011,7 @@
                 "variable": "stats.length"
             },
             {
-                "variable": "stats",
+                "variable": "stats[_i1]",
                 "object": "CharacterCharacteristicForPreset"
             }
         ]
@@ -37512,12 +38140,15 @@
                 "variable": "items.length"
             },
             {
-                "variable": "items",
+                "variable": "items[_i1]",
                 "object": "ItemForPreset"
             },
             {
                 "type": "Boolean",
                 "variable": "mountEquipped"
+            },
+            {
+                "object": "EntityLook"
             }
         ]
     },
@@ -37648,7 +38279,7 @@
                 "variable": "spells.length"
             },
             {
-                "variable": "spells",
+                "variable": "spells[_i1]",
                 "object": "SpellForPreset"
             }
         ]
@@ -37673,7 +38304,7 @@
                 "variable": "stats.length"
             },
             {
-                "variable": "stats",
+                "variable": "stats[_i1]",
                 "object": "SimpleCharacterCharacteristicForPreset"
             }
         ]
@@ -37730,7 +38361,7 @@
                 "variable": "modulesObjects.length"
             },
             {
-                "variable": "modulesObjects",
+                "variable": "modulesObjects[_i5]",
                 "object": "ObjectItem"
             }
         ]
@@ -37749,6 +38380,9 @@
         "attr_write": [
             {
                 "parent": "PrismInformation"
+            },
+            {
+                "object": "AllianceInformations"
             }
         ]
     },
@@ -37779,6 +38413,9 @@
             {
                 "type": "VarShort",
                 "variable": "subAreaId"
+            },
+            {
+                "object": "ProtectedEntityWaitingForHelpInfo"
             },
             {
                 "type": "Short",
@@ -38123,6 +38760,9 @@
         "attr_write": [
             {
                 "parent": "GuildInformations"
+            },
+            {
+                "object": "BasicNamedAllianceInformations"
             }
         ]
     },
@@ -38213,6 +38853,9 @@
             {
                 "type": "Short",
                 "variable": "lastActivityDay"
+            },
+            {
+                "object": "GuildRecruitmentInformation"
             },
             {
                 "type": "Int",
@@ -38381,7 +39024,7 @@
                 "variable": "items.length"
             },
             {
-                "variable": "items",
+                "variable": "items[_i6]",
                 "object": "ObjectItemInformationWithQuantity"
             },
             {

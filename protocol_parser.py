@@ -24,10 +24,11 @@ id_pattern = re.compile(r"\s*public static const protocolId:uint = (?P<protocol_
 public_var_pattern = re.compile(r"\s*public var (?P<name>\w+):(?P<type>\S*)")
 attr_write_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<variable>\w+)\)")
 attr_write_length_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<variable>.+)\)")
-write_vector_pattern = re.compile(r"\s*\(this\.(?P<variable>\w+)\[\w+\] as (?P<object>\w+)\)\.serializeAs_\w+\(output\)")
+write_vector_pattern = re.compile(r"\s*\(this.(?P<variable>\w+\[(.*)\]) as (?P<object>\w+)\)\.serialize\w+\(output\)")
 serialize_parent_pattern = re.compile(r"\s*super\.serializeAs_(?P<parent>\w+)\(output\)")
 attr_type_id_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\((?:[^)]*as )(?P<type>\w+)(?:[^)]*\))\.getTypeId")
 
+serialize_object_pattern = re.compile(r'\s*this\.\w+\.serializeAs_(?P<object>\w+)\(output\)\;')
 
 # Créez une liste vide contenant les classes
 classes = []
@@ -52,6 +53,7 @@ for filename in tqdm(file_paths):
             write_vector_match = write_vector_pattern.match(line)
             serialize_parent_match = serialize_parent_pattern.match(line)
             attr_type_id_match = attr_type_id_pattern.match(line)
+            serialize_object_match = serialize_object_pattern.match(line)
             
             # Si l'expression régulière a trouvé une correspondance, ajoutez le type de variable au dictionnaire
             if class_match:
@@ -63,6 +65,10 @@ for filename in tqdm(file_paths):
             elif public_var_match:
                 vars.append(public_var_match.groupdict()) 
                 result["vars"] = vars
+                
+            elif serialize_object_match:
+                attr_write.append(serialize_object_match.groupdict()) 
+                result["attr_write"] = attr_write                
             
             elif attr_type_id_match:
                 attr_write.append(attr_type_id_match.groupdict())
