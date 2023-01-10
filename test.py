@@ -41,7 +41,7 @@ def read_packet(packet_id):
                 
                 
         
-        print(attr)  
+         
         # if attr.get('type') == 'Byte':
         #     print(attr.get('variable') + ": \t" + "readByte")
         # elif attr.get('type') == 'VarLong':
@@ -59,9 +59,13 @@ def read_packet(packet_id):
             
         if attr.get('object'):
             id = find_protocol_id_by_name(attr.get('object'))
-            read_packet(id)            
+            read_packet(id)  
+            index_iterator += 1     
+            continue 
+            
+        print(attr)             
   
         index_iterator += 1    
     
     
-read_packet(2066)    
+read_packet(3593)

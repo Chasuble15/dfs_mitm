@@ -77,7 +77,7 @@ class Packet:
         elif self.lenType == 3:
             return self.read3Bytes()
         else:
-            print("[ERROR] LenType invalide")
+            return 0   
             
             
     def readVarInt(self):
