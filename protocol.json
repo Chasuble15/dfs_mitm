@@ -197,6 +197,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "datas[_i1]",
                 "type": "StatisticData"
             }
         ]
@@ -1145,6 +1146,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "finishedAchievements[_i1]",
                 "type": "AchievementAchieved"
             }
         ]
@@ -2000,6 +2002,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "summons[_i1]",
                 "type": "GameContextSummonsInformation"
             }
         ]
@@ -2316,6 +2319,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "summons[_i1]",
                 "type": "GameFightFighterInformations"
             }
         ]
@@ -2874,6 +2878,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "prisms[_i3]",
                 "type": "PrismSubareaEmptyInfo"
             }
         ]
@@ -3643,6 +3648,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "variables[_i1]",
                 "type": "ServerSessionConstant"
             }
         ]
@@ -4075,6 +4081,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "socialGroups[_i10]",
                 "type": "AbstractSocialGroupInfos"
             },
             {
@@ -4441,6 +4448,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "characters[_i1]",
                 "type": "CharacterBaseInformations"
             }
         ]
@@ -4835,6 +4843,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "debts[_i2]",
                 "type": "DebtInformation"
             }
         ]
@@ -6706,6 +6715,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "results[_i4]",
                 "type": "FightResultListEntry"
             },
             {
@@ -7512,6 +7522,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "fighters[_i1]",
                 "type": "GameFightFighterInformations"
             }
         ]
@@ -7812,6 +7823,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "shortcuts[_i6]",
                 "type": "Shortcut"
             }
         ]
@@ -8894,6 +8906,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "informationsList[_i1]",
                 "type": "GameRolePlayActorInformations"
             }
         ]
@@ -9024,6 +9037,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "houses[_i3]",
                 "type": "HouseInformations"
             },
             {
@@ -9032,6 +9046,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "actors[_i4]",
                 "type": "GameRolePlayActorInformations"
             },
             {
@@ -9040,6 +9055,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "interactiveElements[_i5]",
                 "type": "InteractiveElement"
             },
             {
@@ -9242,6 +9258,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "attackers[_i2]",
                 "type": "GameFightFighterLightInformations"
             },
             {
@@ -9250,6 +9267,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "defenders[_i3]",
                 "type": "GameFightFighterLightInformations"
             }
         ]
@@ -9740,6 +9758,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "branches[_i4]",
                 "type": "BreachBranch"
             }
         ]
@@ -9762,6 +9781,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "branches[_i1]",
                 "type": "ExtendedBreachBranch"
             }
         ]
@@ -13649,6 +13669,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "members[_i6]",
                 "type": "PartyInvitationMemberInformations"
             },
             {
@@ -13883,6 +13904,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "members[_i4]",
                 "type": "PartyMemberInformations"
             },
             {
@@ -14593,6 +14615,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "activeQuests[_i3]",
                 "type": "QuestActiveInformations"
             },
             {
@@ -15323,6 +15346,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "knownStepsList[_i3]",
                 "type": "TreasureHuntStep"
             },
             {
@@ -15656,6 +15680,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "acquaintanceList[_i1]",
                 "type": "AcquaintanceInformation"
             }
         ]
@@ -15871,6 +15896,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "friendsList[_i1]",
                 "type": "FriendInformations"
             }
         ]
@@ -16156,6 +16182,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "ignoredList[_i1]",
                 "type": "IgnoredInformations"
             }
         ]
@@ -17726,6 +17753,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "guilds[_i1]",
                 "type": "GuildVersatileInformations"
             }
         ]
@@ -18328,6 +18356,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "globalActivities[_i1]",
                 "type": "GuildLogbookEntryBasicInformation"
             },
             {
@@ -18336,6 +18365,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "chestActivities[_i2]",
                 "type": "GuildLogbookEntryBasicInformation"
             }
         ]
@@ -18404,6 +18434,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "informations[_i1]",
                 "type": "TaxCollectorInformations"
             }
         ]
@@ -18940,6 +18971,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "idols[_i2]",
                 "type": "Idol"
             }
         ]
@@ -18986,6 +19018,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "partyIdols[_i3]",
                 "type": "PartyIdol"
             }
         ]
@@ -19261,6 +19294,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "interactiveElements[_i1]",
                 "type": "InteractiveElement"
             }
         ]
@@ -20234,6 +20268,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i4]",
                 "type": "ObjectEffect"
             },
             {
@@ -22646,6 +22681,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "boostToUpdateList[_i2]",
                 "type": "UpdateMountCharacteristic"
             }
         ]
@@ -23695,6 +23731,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "setEffects[_i3]",
                 "type": "ObjectEffect"
             }
         ]
@@ -24333,6 +24370,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "presets[_i1]",
                 "type": "Preset"
             }
         ]
@@ -24817,6 +24855,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "prisms[_i1]",
                 "type": "PrismSubareaEmptyInfo"
             }
         ]
@@ -25206,6 +25245,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "shortcuts[_i2]",
                 "type": "Shortcut"
             }
         ]
@@ -27831,6 +27871,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i5]",
                 "type": "ObjectEffect"
             }
         ]
@@ -27924,6 +27965,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "characteristics[_i1]",
                 "type": "CharacterCharacteristic"
             }
         ]
@@ -28009,6 +28051,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "characteristics[_i8]",
                 "type": "CharacterCharacteristic"
             },
             {
@@ -28982,6 +29025,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "fightTeams[_i3]",
                 "type": "FightTeamInformations"
             },
             {
@@ -29365,6 +29409,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "additional[_i2]",
                 "type": "FightResultAdditionalData"
             }
         ]
@@ -29513,6 +29558,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "teamMembers[_i1]",
                 "type": "FightTeamMemberInformations"
             }
         ]
@@ -29839,6 +29885,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "summons[_i5]",
                 "type": "GameContextBasicSpawnInformation"
             }
         ]
@@ -30895,6 +30942,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "alternatives[_i2]",
                 "type": "GroupMonsterStaticInformations"
             }
         ]
@@ -30957,6 +31005,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "options[_i2]",
                 "type": "HumanOption"
             }
         ]
@@ -31296,6 +31345,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "options[_i3]",
                 "type": "HumanOption"
             }
         ]
@@ -32440,6 +32490,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "skills[_i2]",
                 "type": "SkillActionDescription"
             }
         ]
@@ -32951,6 +33002,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "entities[_i12]",
                 "type": "PartyEntityBaseInformation"
             }
         ]
@@ -33104,6 +33156,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "objectives[_i2]",
                 "type": "QuestObjectiveInformations"
             }
         ]
@@ -33396,6 +33449,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i4]",
                 "type": "ObjectEffect"
             },
             {
@@ -33474,6 +33528,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i1]",
                 "type": "ObjectEffect"
             }
         ]
@@ -33523,6 +33578,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i3]",
                 "type": "ObjectEffect"
             },
             {
@@ -33614,6 +33670,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i2]",
                 "type": "ObjectEffect"
             }
         ]
@@ -33655,6 +33712,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i2]",
                 "type": "ObjectEffect"
             },
             {
@@ -33773,6 +33831,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i2]",
                 "type": "ObjectEffect"
             },
             {
@@ -33855,6 +33914,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "effects[_i2]",
                 "type": "ObjectEffect"
             },
             {
@@ -35886,6 +35946,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "allyCharactersInformations[_i2]",
                 "type": "CharacterMinimalPlusLookInformations"
             },
             {
@@ -35894,6 +35955,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "enemyCharactersInformations[_i3]",
                 "type": "CharacterMinimalPlusLookInformations"
             }
         ]
@@ -36006,6 +36068,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "complements[_i10]",
                 "type": "TaxCollectorComplementaryInformations"
             }
         ]
@@ -36686,6 +36749,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "enabledSkills[_i3]",
                 "type": "InteractiveElementSkill"
             },
             {
@@ -36694,6 +36758,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "disabledSkills[_i4]",
                 "type": "InteractiveElementSkill"
             },
             {
@@ -37881,6 +37946,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "paddocks[_i1]",
                 "type": "PaddockBuyableInformations"
             }
         ]
@@ -38191,6 +38257,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "presets[_i1]",
                 "type": "Preset"
             }
         ]
@@ -38423,6 +38490,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "allyCharactersInformations[_i3]",
                 "type": "CharacterMinimalPlusLookInformations"
             },
             {
@@ -38431,6 +38499,7 @@
             },
             {
                 "type_id": "Short",
+                "variable": "enemyCharactersInformations[_i4]",
                 "type": "CharacterMinimalPlusLookInformations"
             }
         ]

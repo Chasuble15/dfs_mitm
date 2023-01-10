@@ -129,14 +129,10 @@ class InjectorBridgeHandler:
                 # RX
                 
                 ### Click automatique sur le personnage au lancement du jeu
-                if message["message"] == "CharactersListMessage":
-                    self.select_player(message["characters"][0]["id"])
+                # if message["message"] == "CharactersListMessage":
+                #     self.select_player(message["characters"][0]["id"])
                     
-
-                    
-                if self.packet.packet_id not in IGNORE_PACKET_ID:
-                    
-                    print("RX:", message)
+                print("RX:", message)
           
 
                  

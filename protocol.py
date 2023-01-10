@@ -348,20 +348,20 @@ def get_message(packet: Packet):
     
     if packet.packet_id == 7962:
         return exchangeBidHouseSearchMessage(packet)
-    elif packet.packet_id == 4644:
-        return basicAckMessage(packet)
-    elif packet.packet_id == 6062:
-        return exchangeTypesItemsExchangerDescriptionForUserMessage(packet)
-    elif packet.packet_id == 311:
-        return basicPingMessage(packet)
-    elif packet.packet_id == 1411:
-        return interactiveUseRequestMessage(packet)
-    elif packet.packet_id == 1159:
-        return charactersListMessage(packet)
-    elif packet.packet_id == 5360:
-        return queueStatusMessage(packet)
-    elif packet.packet_id == 4524:
-        return mapComplementaryInformationsDataMessage(packet)
+    # elif packet.packet_id == 4644:
+    #     return basicAckMessage(packet)
+    # elif packet.packet_id == 6062:
+    #     return exchangeTypesItemsExchangerDescriptionForUserMessage(packet)
+    # elif packet.packet_id == 311:
+    #     return basicPingMessage(packet)
+    # elif packet.packet_id == 1411:
+    #     return interactiveUseRequestMessage(packet)
+    # elif packet.packet_id == 1159:
+    #     return charactersListMessage(packet)
+    # elif packet.packet_id == 5360:
+    #     return queueStatusMessage(packet)
+    # elif packet.packet_id == 4524:
+    #     return mapComplementaryInformationsDataMessage(packet)
     else:
         return unknow(packet)
 

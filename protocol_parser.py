@@ -26,7 +26,7 @@ attr_write_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<
 attr_write_length_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<variable>.+)\)")
 write_vector_pattern = re.compile(r"\s*\(this.(?P<variable>\w+\[(.*)\]) as (?P<object>\w+)\)\.serialize\w+\(output\)")
 serialize_parent_pattern = re.compile(r"\s*super\.serializeAs_(?P<parent>\w+)\(output\)")
-attr_type_id_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\((?:[^)]*as )(?P<type>\w+)(?:[^)]*\))\.getTypeId")
+attr_type_id_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\(\(this\.(?P<variable>\w+\[(.*)\]) as (?P<type>\w+)\)\.getTypeId\(\)\)")
 
 serialize_object_pattern = re.compile(r'\s*this\.\w+\.serializeAs_(?P<object>\w+)\(output\)\;')
 
