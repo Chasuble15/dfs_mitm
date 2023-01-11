@@ -59,6 +59,9 @@ class Packet:
         self.pos = self.pos + size
         return b.decode()
     
+
+
+    
     def readByte(self):
         b = self.data[self.pos]
         self.pos = self.pos + 1
@@ -168,7 +171,15 @@ class Packet:
     def writeVarLong(self, i):
         assert i.bit_length() <= 64
         self._writeVar(i)       
-               
+
+    def writeUnsignedShort(self, us):
+        self.data += us.to_bytes(2, "big")
+      
+    def writeUTF(self, ch):
+        dat = ch.encode()
+        self.writeUnsignedShort(len(dat))
+        self.data += dat           
+        
         
     def writeHeader(self, packet_id, instance_id):
         # Write length
