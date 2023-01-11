@@ -198,7 +198,7 @@
             {
                 "type_id": "Short",
                 "variable": "datas[_i1]",
-                "type": "StatisticData"
+                "target": "StatisticData"
             }
         ]
     },
@@ -1147,7 +1147,7 @@
             {
                 "type_id": "Short",
                 "variable": "finishedAchievements[_i1]",
-                "type": "AchievementAchieved"
+                "target": "AchievementAchieved"
             }
         ]
     },
@@ -1587,8 +1587,8 @@
                 "parent": "AbstractGameActionMessage"
             },
             {
-                "type": "Short",
-                "variable": "effect.getTypeId()"
+                "type_id": "Short",
+                "variable": "effect"
             }
         ]
     },
@@ -2003,7 +2003,7 @@
             {
                 "type_id": "Short",
                 "variable": "summons[_i1]",
-                "type": "GameContextSummonsInformation"
+                "target": "GameContextSummonsInformation"
             }
         ]
     },
@@ -2320,7 +2320,7 @@
             {
                 "type_id": "Short",
                 "variable": "summons[_i1]",
-                "type": "GameFightFighterInformations"
+                "target": "GameFightFighterInformations"
             }
         ]
     },
@@ -2768,8 +2768,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "infos.getTypeId()"
+                "type_id": "Short",
+                "variable": "infos"
             },
             {
                 "type": "Short",
@@ -2879,7 +2879,7 @@
             {
                 "type_id": "Short",
                 "variable": "prisms[_i3]",
-                "type": "PrismSubareaEmptyInfo"
+                "target": "PrismSubareaEmptyInfo"
             }
         ]
     },
@@ -3649,7 +3649,7 @@
             {
                 "type_id": "Short",
                 "variable": "variables[_i1]",
-                "type": "ServerSessionConstant"
+                "target": "ServerSessionConstant"
             }
         ]
     },
@@ -3771,8 +3771,8 @@
                 "variable": "type"
             },
             {
-                "type": "Short",
-                "variable": "coords.getTypeId()"
+                "type_id": "Short",
+                "variable": "coords"
             }
         ]
     },
@@ -4082,7 +4082,7 @@
             {
                 "type_id": "Short",
                 "variable": "socialGroups[_i10]",
-                "type": "AbstractSocialGroupInfos"
+                "target": "AbstractSocialGroupInfos"
             },
             {
                 "type": "Byte",
@@ -4103,8 +4103,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -4129,8 +4129,8 @@
                 "variable": "verbose"
             },
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -4449,7 +4449,7 @@
             {
                 "type_id": "Short",
                 "variable": "characters[_i1]",
-                "type": "CharacterBaseInformations"
+                "target": "CharacterBaseInformations"
             }
         ]
     },
@@ -4844,7 +4844,7 @@
             {
                 "type_id": "Short",
                 "variable": "debts[_i2]",
-                "type": "DebtInformation"
+                "target": "DebtInformation"
             }
         ]
     },
@@ -5362,8 +5362,8 @@
                 "variable": "playerId"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             }
         ]
     },
@@ -5380,8 +5380,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             }
         ]
     },
@@ -5518,8 +5518,8 @@
                 "parent": "ChatAbstractClientMessage"
             },
             {
-                "type": "Short",
-                "variable": "receiver.getTypeId()"
+                "type_id": "Short",
+                "variable": "receiver"
             }
         ]
     },
@@ -6716,7 +6716,7 @@
             {
                 "type_id": "Short",
                 "variable": "results[_i4]",
-                "type": "FightResultListEntry"
+                "target": "FightResultListEntry"
             },
             {
                 "type": "Short",
@@ -7523,7 +7523,7 @@
             {
                 "type_id": "Short",
                 "variable": "fighters[_i1]",
-                "type": "GameFightFighterInformations"
+                "target": "GameFightFighterInformations"
             }
         ]
     },
@@ -7824,7 +7824,7 @@
             {
                 "type_id": "Short",
                 "variable": "shortcuts[_i6]",
-                "type": "Shortcut"
+                "target": "Shortcut"
             }
         ]
     },
@@ -8031,8 +8031,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "informations.getTypeId()"
+                "type_id": "Short",
+                "variable": "informations"
             }
         ]
     },
@@ -8049,8 +8049,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "informations.getTypeId()"
+                "type_id": "Short",
+                "variable": "informations"
             }
         ]
     },
@@ -8862,8 +8862,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "informations.getTypeId()"
+                "type_id": "Short",
+                "variable": "informations"
             }
         ]
     },
@@ -8907,7 +8907,7 @@
             {
                 "type_id": "Short",
                 "variable": "informationsList[_i1]",
-                "type": "GameRolePlayActorInformations"
+                "target": "GameRolePlayActorInformations"
             }
         ]
     },
@@ -9038,7 +9038,7 @@
             {
                 "type_id": "Short",
                 "variable": "houses[_i3]",
-                "type": "HouseInformations"
+                "target": "HouseInformations"
             },
             {
                 "type": "Short",
@@ -9047,7 +9047,7 @@
             {
                 "type_id": "Short",
                 "variable": "actors[_i4]",
-                "type": "GameRolePlayActorInformations"
+                "target": "GameRolePlayActorInformations"
             },
             {
                 "type": "Short",
@@ -9056,7 +9056,7 @@
             {
                 "type_id": "Short",
                 "variable": "interactiveElements[_i5]",
-                "type": "InteractiveElement"
+                "target": "InteractiveElement"
             },
             {
                 "type": "Short",
@@ -9259,7 +9259,7 @@
             {
                 "type_id": "Short",
                 "variable": "attackers[_i2]",
-                "type": "GameFightFighterLightInformations"
+                "target": "GameFightFighterLightInformations"
             },
             {
                 "type": "Short",
@@ -9268,7 +9268,7 @@
             {
                 "type_id": "Short",
                 "variable": "defenders[_i3]",
-                "type": "GameFightFighterLightInformations"
+                "target": "GameFightFighterLightInformations"
             }
         ]
     },
@@ -9759,7 +9759,7 @@
             {
                 "type_id": "Short",
                 "variable": "branches[_i4]",
-                "type": "BreachBranch"
+                "target": "BreachBranch"
             }
         ]
     },
@@ -9782,7 +9782,7 @@
             {
                 "type_id": "Short",
                 "variable": "branches[_i1]",
-                "type": "ExtendedBreachBranch"
+                "target": "ExtendedBreachBranch"
             }
         ]
     },
@@ -11609,8 +11609,8 @@
                 "variable": "doorsOnMap[_i2]"
             },
             {
-                "type": "Short",
-                "variable": "properties.getTypeId()"
+                "type_id": "Short",
+                "variable": "properties"
             }
         ]
     },
@@ -13670,7 +13670,7 @@
             {
                 "type_id": "Short",
                 "variable": "members[_i6]",
-                "type": "PartyInvitationMemberInformations"
+                "target": "PartyInvitationMemberInformations"
             },
             {
                 "type": "Short",
@@ -13842,8 +13842,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -13905,7 +13905,7 @@
             {
                 "type_id": "Short",
                 "variable": "members[_i4]",
-                "type": "PartyMemberInformations"
+                "target": "PartyMemberInformations"
             },
             {
                 "type": "Short",
@@ -14408,8 +14408,8 @@
                 "parent": "AbstractPartyEventMessage"
             },
             {
-                "type": "Short",
-                "variable": "memberInformations.getTypeId()"
+                "type_id": "Short",
+                "variable": "memberInformations"
             }
         ]
     },
@@ -14616,7 +14616,7 @@
             {
                 "type_id": "Short",
                 "variable": "activeQuests[_i3]",
-                "type": "QuestActiveInformations"
+                "target": "QuestActiveInformations"
             },
             {
                 "type": "Short",
@@ -14735,8 +14735,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "infos.getTypeId()"
+                "type_id": "Short",
+                "variable": "infos"
             }
         ]
     },
@@ -15347,7 +15347,7 @@
             {
                 "type_id": "Short",
                 "variable": "knownStepsList[_i3]",
-                "type": "TreasureHuntStep"
+                "target": "TreasureHuntStep"
             },
             {
                 "type": "Byte",
@@ -15651,8 +15651,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "acquaintanceAdded.getTypeId()"
+                "type_id": "Short",
+                "variable": "acquaintanceAdded"
             }
         ]
     },
@@ -15681,7 +15681,7 @@
             {
                 "type_id": "Short",
                 "variable": "acquaintanceList[_i1]",
-                "type": "AcquaintanceInformation"
+                "target": "AcquaintanceInformation"
             }
         ]
     },
@@ -15716,8 +15716,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "friendAdded.getTypeId()"
+                "type_id": "Short",
+                "variable": "friendAdded"
             }
         ]
     },
@@ -15752,8 +15752,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -15813,8 +15813,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -15897,7 +15897,7 @@
             {
                 "type_id": "Short",
                 "variable": "friendsList[_i1]",
-                "type": "FriendInformations"
+                "target": "FriendInformations"
             }
         ]
     },
@@ -15956,8 +15956,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "friendUpdated.getTypeId()"
+                "type_id": "Short",
+                "variable": "friendUpdated"
             }
         ]
     },
@@ -16050,8 +16050,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "ignoreAdded.getTypeId()"
+                "type_id": "Short",
+                "variable": "ignoreAdded"
             },
             {
                 "type": "Boolean",
@@ -16094,8 +16094,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             },
             {
                 "type": "Boolean",
@@ -16183,7 +16183,7 @@
             {
                 "type_id": "Short",
                 "variable": "ignoredList[_i1]",
-                "type": "IgnoredInformations"
+                "target": "IgnoredInformations"
             }
         ]
     },
@@ -16206,8 +16206,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "spouse.getTypeId()"
+                "type_id": "Short",
+                "variable": "spouse"
             }
         ]
     },
@@ -16628,8 +16628,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "infos.getTypeId()"
+                "type_id": "Short",
+                "variable": "infos"
             },
             {
                 "type": "Int",
@@ -17074,8 +17074,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "target.getTypeId()"
+                "type_id": "Short",
+                "variable": "target"
             }
         ]
     },
@@ -17754,7 +17754,7 @@
             {
                 "type_id": "Short",
                 "variable": "guilds[_i1]",
-                "type": "GuildVersatileInformations"
+                "target": "GuildVersatileInformations"
             }
         ]
     },
@@ -18357,7 +18357,7 @@
             {
                 "type_id": "Short",
                 "variable": "globalActivities[_i1]",
-                "type": "GuildLogbookEntryBasicInformation"
+                "target": "GuildLogbookEntryBasicInformation"
             },
             {
                 "type": "Short",
@@ -18366,7 +18366,7 @@
             {
                 "type_id": "Short",
                 "variable": "chestActivities[_i2]",
-                "type": "GuildLogbookEntryBasicInformation"
+                "target": "GuildLogbookEntryBasicInformation"
             }
         ]
     },
@@ -18435,7 +18435,7 @@
             {
                 "type_id": "Short",
                 "variable": "informations[_i1]",
-                "type": "TaxCollectorInformations"
+                "target": "TaxCollectorInformations"
             }
         ]
     },
@@ -18786,8 +18786,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "informations.getTypeId()"
+                "type_id": "Short",
+                "variable": "informations"
             }
         ]
     },
@@ -18972,7 +18972,7 @@
             {
                 "type_id": "Short",
                 "variable": "idols[_i2]",
-                "type": "Idol"
+                "target": "Idol"
             }
         ]
     },
@@ -19019,7 +19019,7 @@
             {
                 "type_id": "Short",
                 "variable": "partyIdols[_i3]",
-                "type": "PartyIdol"
+                "target": "PartyIdol"
             }
         ]
     },
@@ -19295,7 +19295,7 @@
             {
                 "type_id": "Short",
                 "variable": "interactiveElements[_i1]",
-                "type": "InteractiveElement"
+                "target": "InteractiveElement"
             }
         ]
     },
@@ -20269,7 +20269,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i4]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "Short",
@@ -22682,7 +22682,7 @@
             {
                 "type_id": "Short",
                 "variable": "boostToUpdateList[_i2]",
-                "type": "UpdateMountCharacteristic"
+                "target": "UpdateMountCharacteristic"
             }
         ]
     },
@@ -23732,7 +23732,7 @@
             {
                 "type_id": "Short",
                 "variable": "setEffects[_i3]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             }
         ]
     },
@@ -24321,8 +24321,8 @@
                 "variable": "presetId"
             },
             {
-                "type": "Short",
-                "variable": "preset.getTypeId()"
+                "type_id": "Short",
+                "variable": "preset"
             }
         ]
     },
@@ -24371,7 +24371,7 @@
             {
                 "type_id": "Short",
                 "variable": "presets[_i1]",
-                "type": "Preset"
+                "target": "Preset"
             }
         ]
     },
@@ -24496,8 +24496,8 @@
                 "variable": "fightId"
             },
             {
-                "type": "Short",
-                "variable": "attacker.getTypeId()"
+                "type_id": "Short",
+                "variable": "attacker"
             }
         ]
     },
@@ -24564,8 +24564,8 @@
                 "variable": "fightId"
             },
             {
-                "type": "Short",
-                "variable": "defender.getTypeId()"
+                "type_id": "Short",
+                "variable": "defender"
             }
         ]
     },
@@ -24856,7 +24856,7 @@
             {
                 "type_id": "Short",
                 "variable": "prisms[_i1]",
-                "type": "PrismSubareaEmptyInfo"
+                "target": "PrismSubareaEmptyInfo"
             }
         ]
     },
@@ -25214,8 +25214,8 @@
                 "variable": "barType"
             },
             {
-                "type": "Short",
-                "variable": "shortcut.getTypeId()"
+                "type_id": "Short",
+                "variable": "shortcut"
             }
         ]
     },
@@ -25246,7 +25246,7 @@
             {
                 "type_id": "Short",
                 "variable": "shortcuts[_i2]",
-                "type": "Shortcut"
+                "target": "Shortcut"
             }
         ]
     },
@@ -25271,8 +25271,8 @@
                 "variable": "barType"
             },
             {
-                "type": "Short",
-                "variable": "shortcut.getTypeId()"
+                "type_id": "Short",
+                "variable": "shortcut"
             }
         ]
     },
@@ -25367,8 +25367,8 @@
                 "variable": "barType"
             },
             {
-                "type": "Short",
-                "variable": "shortcut.getTypeId()"
+                "type_id": "Short",
+                "variable": "shortcut"
             }
         ]
     },
@@ -27135,8 +27135,8 @@
                 "variable": "sourceId"
             },
             {
-                "type": "Short",
-                "variable": "effect.getTypeId()"
+                "type_id": "Short",
+                "variable": "effect"
             }
         ]
     },
@@ -27872,7 +27872,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i5]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             }
         ]
     },
@@ -27966,7 +27966,7 @@
             {
                 "type_id": "Short",
                 "variable": "characteristics[_i1]",
-                "type": "CharacterCharacteristic"
+                "target": "CharacterCharacteristic"
             }
         ]
     },
@@ -28052,7 +28052,7 @@
             {
                 "type_id": "Short",
                 "variable": "characteristics[_i8]",
-                "type": "CharacterCharacteristic"
+                "target": "CharacterCharacteristic"
             },
             {
                 "type": "Short",
@@ -28699,8 +28699,8 @@
                 "variable": "contextualId"
             },
             {
-                "type": "Short",
-                "variable": "disposition.getTypeId()"
+                "type_id": "Short",
+                "variable": "disposition"
             }
         ]
     },
@@ -28728,8 +28728,8 @@
                 "parent": "GameRolePlayActorInformations"
             },
             {
-                "type": "Short",
-                "variable": "identification.getTypeId()"
+                "type_id": "Short",
+                "variable": "identification"
             },
             {
                 "type": "Byte",
@@ -29026,7 +29026,7 @@
             {
                 "type_id": "Short",
                 "variable": "fightTeams[_i3]",
-                "type": "FightTeamInformations"
+                "target": "FightTeamInformations"
             },
             {
                 "type": "Short",
@@ -29410,7 +29410,7 @@
             {
                 "type_id": "Short",
                 "variable": "additional[_i2]",
-                "type": "FightResultAdditionalData"
+                "target": "FightResultAdditionalData"
             }
         ]
     },
@@ -29559,7 +29559,7 @@
             {
                 "type_id": "Short",
                 "variable": "teamMembers[_i1]",
-                "type": "FightTeamMemberInformations"
+                "target": "FightTeamMemberInformations"
             }
         ]
     },
@@ -29831,8 +29831,8 @@
                 "variable": "alive"
             },
             {
-                "type": "Short",
-                "variable": "informations.getTypeId()"
+                "type_id": "Short",
+                "variable": "informations"
             }
         ]
     },
@@ -29865,8 +29865,8 @@
         ],
         "attr_write": [
             {
-                "type": "Short",
-                "variable": "spawnInformation.getTypeId()"
+                "type_id": "Short",
+                "variable": "spawnInformation"
             },
             {
                 "type": "Byte",
@@ -29876,8 +29876,8 @@
                 "object": "EntityLook"
             },
             {
-                "type": "Short",
-                "variable": "stats.getTypeId()"
+                "type_id": "Short",
+                "variable": "stats"
             },
             {
                 "type": "Short",
@@ -29886,7 +29886,7 @@
             {
                 "type_id": "Short",
                 "variable": "summons[_i5]",
-                "type": "GameContextBasicSpawnInformation"
+                "target": "GameContextBasicSpawnInformation"
             }
         ]
     },
@@ -30121,8 +30121,8 @@
                 "variable": "wave"
             },
             {
-                "type": "Short",
-                "variable": "stats.getTypeId()"
+                "type_id": "Short",
+                "variable": "stats"
             },
             {
                 "type": "Short",
@@ -30900,8 +30900,8 @@
                 "variable": "_box0"
             },
             {
-                "type": "Short",
-                "variable": "staticInfos.getTypeId()"
+                "type_id": "Short",
+                "variable": "staticInfos"
             },
             {
                 "type": "Byte",
@@ -30943,7 +30943,7 @@
             {
                 "type_id": "Short",
                 "variable": "alternatives[_i2]",
-                "type": "GroupMonsterStaticInformations"
+                "target": "GroupMonsterStaticInformations"
             }
         ]
     },
@@ -30967,8 +30967,8 @@
                 "parent": "GameRolePlayNamedActorInformations"
             },
             {
-                "type": "Short",
-                "variable": "humanoidInfo.getTypeId()"
+                "type_id": "Short",
+                "variable": "humanoidInfo"
             },
             {
                 "type": "Int",
@@ -31006,7 +31006,7 @@
             {
                 "type_id": "Short",
                 "variable": "options[_i2]",
-                "type": "HumanOption"
+                "target": "HumanOption"
             }
         ]
     },
@@ -31162,8 +31162,8 @@
                 "parent": "GameRolePlayActorInformations"
             },
             {
-                "type": "Short",
-                "variable": "portal.getTypeId()"
+                "type_id": "Short",
+                "variable": "portal"
             }
         ]
     },
@@ -31183,8 +31183,8 @@
                 "parent": "GameRolePlayActorInformations"
             },
             {
-                "type": "Short",
-                "variable": "prism.getTypeId()"
+                "type_id": "Short",
+                "variable": "prism"
             }
         ]
     },
@@ -31346,7 +31346,7 @@
             {
                 "type_id": "Short",
                 "variable": "options[_i3]",
-                "type": "HumanOption"
+                "target": "HumanOption"
             }
         ]
     },
@@ -32401,8 +32401,8 @@
                 "variable": "canCraftLegendary"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             }
         ]
     },
@@ -32491,7 +32491,7 @@
             {
                 "type_id": "Short",
                 "variable": "skills[_i2]",
-                "type": "SkillActionDescription"
+                "target": "SkillActionDescription"
             }
         ]
     },
@@ -32752,8 +32752,8 @@
                 "variable": "sex"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             },
             {
                 "type": "Short",
@@ -32993,8 +32993,8 @@
                 "variable": "subAreaId"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             },
             {
                 "type": "Short",
@@ -33003,7 +33003,7 @@
             {
                 "type_id": "Short",
                 "variable": "entities[_i12]",
-                "type": "PartyEntityBaseInformation"
+                "target": "PartyEntityBaseInformation"
             }
         ]
     },
@@ -33157,7 +33157,7 @@
             {
                 "type_id": "Short",
                 "variable": "objectives[_i2]",
-                "type": "QuestObjectiveInformations"
+                "target": "QuestObjectiveInformations"
             }
         ]
     },
@@ -33450,7 +33450,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i4]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "Short",
@@ -33529,7 +33529,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i1]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             }
         ]
     },
@@ -33579,7 +33579,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i3]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "VarInt",
@@ -33671,7 +33671,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i2]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             }
         ]
     },
@@ -33713,7 +33713,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i2]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "VarInt",
@@ -33832,7 +33832,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i2]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "VarInt",
@@ -33915,7 +33915,7 @@
             {
                 "type_id": "Short",
                 "variable": "effects[_i2]",
-                "type": "ObjectEffect"
+                "target": "ObjectEffect"
             },
             {
                 "type": "VarInt",
@@ -34634,8 +34634,8 @@
                 "variable": "moodSmileyId"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             }
         ]
     },
@@ -34775,8 +34775,8 @@
                 "variable": "moodSmileyId"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             }
         ]
     },
@@ -35153,8 +35153,8 @@
                 "variable": "achievementPoints"
             },
             {
-                "type": "Short",
-                "variable": "status.getTypeId()"
+                "type_id": "Short",
+                "variable": "status"
             },
             {
                 "object": "PlayerNote"
@@ -35947,7 +35947,7 @@
             {
                 "type_id": "Short",
                 "variable": "allyCharactersInformations[_i2]",
-                "type": "CharacterMinimalPlusLookInformations"
+                "target": "CharacterMinimalPlusLookInformations"
             },
             {
                 "type": "Short",
@@ -35956,7 +35956,7 @@
             {
                 "type_id": "Short",
                 "variable": "enemyCharactersInformations[_i3]",
-                "type": "CharacterMinimalPlusLookInformations"
+                "target": "CharacterMinimalPlusLookInformations"
             }
         ]
     },
@@ -36069,7 +36069,7 @@
             {
                 "type_id": "Short",
                 "variable": "complements[_i10]",
-                "type": "TaxCollectorComplementaryInformations"
+                "target": "TaxCollectorComplementaryInformations"
             }
         ]
     },
@@ -36237,8 +36237,8 @@
                 "parent": "HouseInformations"
             },
             {
-                "type": "Short",
-                "variable": "houseInfos.getTypeId()"
+                "type_id": "Short",
+                "variable": "houseInfos"
             },
             {
                 "type": "Short",
@@ -36541,8 +36541,8 @@
                 "parent": "HouseInformations"
             },
             {
-                "type": "Short",
-                "variable": "houseInfos.getTypeId()"
+                "type_id": "Short",
+                "variable": "houseInfos"
             },
             {
                 "type": "Short",
@@ -36750,7 +36750,7 @@
             {
                 "type_id": "Short",
                 "variable": "enabledSkills[_i3]",
-                "type": "InteractiveElementSkill"
+                "target": "InteractiveElementSkill"
             },
             {
                 "type": "Short",
@@ -36759,7 +36759,7 @@
             {
                 "type_id": "Short",
                 "variable": "disabledSkills[_i4]",
-                "type": "InteractiveElementSkill"
+                "target": "InteractiveElementSkill"
             },
             {
                 "type": "Boolean",
@@ -37947,7 +37947,7 @@
             {
                 "type_id": "Short",
                 "variable": "paddocks[_i1]",
-                "type": "PaddockBuyableInformations"
+                "target": "PaddockBuyableInformations"
             }
         ]
     },
@@ -38258,7 +38258,7 @@
             {
                 "type_id": "Short",
                 "variable": "presets[_i1]",
-                "type": "Preset"
+                "target": "Preset"
             }
         ]
     },
@@ -38491,7 +38491,7 @@
             {
                 "type_id": "Short",
                 "variable": "allyCharactersInformations[_i3]",
-                "type": "CharacterMinimalPlusLookInformations"
+                "target": "CharacterMinimalPlusLookInformations"
             },
             {
                 "type": "Short",
@@ -38500,7 +38500,7 @@
             {
                 "type_id": "Short",
                 "variable": "enemyCharactersInformations[_i4]",
-                "type": "CharacterMinimalPlusLookInformations"
+                "target": "CharacterMinimalPlusLookInformations"
             }
         ]
     },
@@ -38544,8 +38544,8 @@
                 "variable": "mapId"
             },
             {
-                "type": "Short",
-                "variable": "prism.getTypeId()"
+                "type_id": "Short",
+                "variable": "prism"
             }
         ]
     },

@@ -34,8 +34,13 @@ class Message():
     def read(self, task):
         var = dict()
         
-        
-        if task.get('object'):
+        if task.get('type_id'):
+            protocol_id = self.packet.readShort()
+            sub_message = Message(self.packet)
+            sub_message.deserialize(protocol_id)
+            var[task.get('variable')] = sub_message.variables
+            
+        elif task.get('object'):
             protocol_id = find_protocol_id_by_name(task.get('object'))
             sub_message = Message(self.packet)
             sub_message.deserialize(protocol_id)
@@ -47,12 +52,6 @@ class Message():
             sub_message.deserialize(protocol_id)
             var[task.get('parent')] = sub_message.variables             
         
-        elif task.get('type_id'):
-            protocol_id = self.packet.readShort()
-            sub_message = Message(self.packet)
-            sub_message.deserialize(protocol_id)
-            var[task.get('variable')] = sub_message.variables
-            
         elif task.get('type') == "VarInt":
             var[task.get('variable')] = self.packet.readVarInt()
         elif task.get('type') == "VarShort":
@@ -71,14 +70,17 @@ class Message():
             var[task.get('variable')] =  self.packet.readUTF()  
         elif task.get('type') == "Boolean":
             var[task.get('variable')] =  self.packet.readBoolean()  
-                                                
+        else:
+            print("UNKNOWN TYPE ERROR")   
+              
+        # print(f"VARIABLE : {var}")                                        
         return var    
 
 
     def deserialize(self, id):
         
         self.infos = find_dict_by_protocol_id(id)
-        print(id)
+        # print(f"ID: {id}")
         self.tasks = self.infos.get('attr_write')
         
         self.name = self.infos.get('name')
@@ -86,7 +88,7 @@ class Message():
         
         if self.tasks:
             for task in self.tasks:
-                print(task)
+                # print(len(self.packet.data) - self.packet.pos)
                 
                 if task.get('variable') and "[" in task.get('variable'):
                     listname = re.sub("\[.*?\]", "", task.get('variable'))
@@ -109,7 +111,7 @@ packet.addData(bytearray.fromhex(datahex))
 
 
 while len(packet.data) > 0:
-    print("Nouveau packet")
+    print("Nouveau packet ------------------------------------------------------------")
     packet.readHiHeader()
     length = packet.readLength()
     msg = Message(packet)
@@ -118,4 +120,3 @@ while len(packet.data) > 0:
     msg.packet.end()     
 
     print(msg.variables)
-    # print(packet.data.hex())

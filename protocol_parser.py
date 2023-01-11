@@ -26,7 +26,8 @@ attr_write_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<
 attr_write_length_pattern = re.compile(r"\s*output\.write(?P<type>\w+)\((?:this\.)?(?P<variable>.+)\)")
 write_vector_pattern = re.compile(r"\s*\(this.(?P<variable>\w+\[(.*)\]) as (?P<object>\w+)\)\.serialize\w+\(output\)")
 serialize_parent_pattern = re.compile(r"\s*super\.serializeAs_(?P<parent>\w+)\(output\)")
-attr_type_id_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\(\(this\.(?P<variable>\w+\[(.*)\]) as (?P<type>\w+)\)\.getTypeId\(\)\)")
+attr_type_id_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\(\(this\.(?P<variable>\w+\[(.*)\]) as (?P<target>\w+)\)\.getTypeId\(\)\)")
+type_id_secondary_pattern = re.compile(r"\s*output.write(?P<type_id>\w+)\(this\.(?P<variable>\w+)\.getTypeId")
 
 serialize_object_pattern = re.compile(r'\s*this\.\w+\.serializeAs_(?P<object>\w+)\(output\)\;')
 
@@ -54,6 +55,7 @@ for filename in tqdm(file_paths):
             serialize_parent_match = serialize_parent_pattern.match(line)
             attr_type_id_match = attr_type_id_pattern.match(line)
             serialize_object_match = serialize_object_pattern.match(line)
+            type_id_secondary_match = type_id_secondary_pattern.match(line)
             
             # Si l'expression régulière a trouvé une correspondance, ajoutez le type de variable au dictionnaire
             if class_match:
@@ -73,6 +75,10 @@ for filename in tqdm(file_paths):
             elif attr_type_id_match:
                 attr_write.append(attr_type_id_match.groupdict())
                 result["attr_write"] = attr_write
+                
+            elif type_id_secondary_match:
+                attr_write.append(type_id_secondary_match.groupdict())
+                result["attr_write"] = attr_write                    
                 
             elif attr_write_match:
                 attr_write.append(attr_write_match.groupdict())

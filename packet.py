@@ -25,7 +25,7 @@ class Packet:
         # b = self.data[self.pos:self.pos+8]
         # self.pos = self.pos + 8
         # return int.from_bytes(b, 'big', signed=True)
-        print(self.data[self.pos:self.pos+8].hex())
+        # print(self.data[self.pos:self.pos+8].hex())
         double_value = struct.unpack('>d', self.data[self.pos:self.pos+8])[0]
         self.pos = self.pos + 8
         return int(double_value)
