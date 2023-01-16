@@ -6,6 +6,7 @@ from utils import delay
 import json
 from datetime import datetime
 import threading
+from message import Message
 
 IGNORE_PACKET_ID = [
     6743, # ChatServerMessage
@@ -119,20 +120,43 @@ class InjectorBridgeHandler:
         while len(self.packet.data) > 0:
             self.counter += 1
         
-            message = protocol.get_message(self.packet)
+            print("Nouveau packet ------------------------------------------------------------")
+        
+            
+            # self.packet.readHiHeader()
         
             if from_client:
                 # TX
-                print("TX:", message)
+                self.packet.clear()
+                # self.packet.readInt()
+                # length = self.packet.readLength()
+                
+                # msg = Message(self.packet)
+
+
+                # msg.deserialize(self.packet.packet_id)   
+                # msg.packet.end()    
+                # print(msg.variables)
+                
 
             else:
                 # RX
-                
+                print(self.packet.data.hex())
+                self.packet.clear()
+                # length = self.packet.readLength()
+                # print(f"Len: {length}")
+                # self.packet.verifyPacketRx(length)
+                # msg = Message(self.packet)
+            
+                # msg.deserialize(self.packet.packet_id)   
+                # msg.packet.end()
+                # print(msg.variables)
+
                 ### Click automatique sur le personnage au lancement du jeu
                 # if message["message"] == "CharactersListMessage":
                 #     self.select_player(message["characters"][0]["id"])
                     
-                print("RX:", message)
+
           
 
                  

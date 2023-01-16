@@ -12,6 +12,15 @@ class Packet:
     def addData(self, byte):
         self.data += byte
         
+        
+    def verifyPacketRx(self, length):
+        theorical_length = len(self.data[self.pos:])
+        print(f"Theoric: {theorical_length}")
+        if length > theorical_length:
+            print(f"Erreur de longueur! Il manque {length - theorical_length} bytes")
+            print(f"{self.data.hex()} POS: {self.pos}")
+            quit()
+        
     
     def readHiHeader(self):
         hi_head = self.data[0:2]
