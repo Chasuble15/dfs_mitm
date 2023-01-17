@@ -94,7 +94,7 @@ class Message():
     def deserialize(self, id):
         try:
             # print(f"ID: {id}")
-            print(len(self.packet.data[self.packet.pos:]))
+            # print(len(self.packet.data[self.packet.pos:]))
             ### Get the tasks list from the object ID
             self.infos = find_dict_by_protocol_id(id)
             self.tasks = self.infos.get('attr_write')
@@ -117,14 +117,12 @@ class Message():
                             array.append(self.read(task))
                         self.variables[listname] = array
                     else:    
-                        print(f"TASK: {task}")
                         self.variables.update(self.read(task))        
         except:
             # TODO: Regler ce probleme de packets incomplets
             print("Error")
             print(self.infos)
             quit()
-            pass
 
 # msg = Message()
 
@@ -144,6 +142,13 @@ while len(packet.data) > 0:
     packet.readHiHeader()
     # packet.readInt()
     length = packet.readLength()
+    
+    if packet.packet_id == 6951:
+        packet.pos += length
+        packet.end()
+        print("Packet skipped --------------------------------")
+        continue
+    
     print(f"Len: {length} Packet ID: {packet.packet_id}")
     msg = Message(packet)
 

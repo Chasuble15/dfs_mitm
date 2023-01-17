@@ -32041,21 +32041,7 @@
             },
             {
                 "type": "Byte",
-                "variable": "1"
-            },
-            {
-                "object": "ArenaRanking"
-            },
-            {
-                "type": "Byte",
                 "variable": "0"
-            },
-            {
-                "type": "Byte",
-                "variable": "1"
-            },
-            {
-                "object": "ArenaLeagueRanking"
             },
             {
                 "type": "VarShort",
