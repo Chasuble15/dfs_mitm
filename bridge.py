@@ -123,35 +123,50 @@ class InjectorBridgeHandler:
             print("Nouveau packet ------------------------------------------------------------")
         
             
-            # self.packet.readHiHeader()
+            self.packet.readHiHeader()
         
             if from_client:
                 # TX
-                self.packet.clear()
-                # self.packet.readInt()
-                # length = self.packet.readLength()
-                
-                # msg = Message(self.packet)
+                # self.packet.clear()
+                self.packet.readInt()
+                length = self.packet.readLength()
 
+                print(f"Len: {length} Packet ID: {self.packet.packet_id}")
+                msg = Message(self.packet)
 
-                # msg.deserialize(self.packet.packet_id)   
-                # msg.packet.end()    
-                # print(msg.variables)
+                msg.deserialize(self.packet.packet_id)   
+                msg.packet.end()     
+
+                print(f"TX: {msg.variables}")
                 
 
             else:
                 # RX
-                print(self.packet.data.hex())
-                self.packet.clear()
-                # length = self.packet.readLength()
-                # print(f"Len: {length}")
-                # self.packet.verifyPacketRx(length)
-                # msg = Message(self.packet)
-            
-                # msg.deserialize(self.packet.packet_id)   
-                # msg.packet.end()
-                # print(msg.variables)
+                # print(self.packet.data.hex())
+                # self.packet.clear()
+                length = self.packet.readLength()
+                
+                if self.packet.packet_id == 6951:
+                    self.packet.pos += length
+                    self.packet.end()
+                    print("Packet skipped --------------------------------")
+                    
+                else:    
+                
+                    if length > len(self.packet.data[self.packet.pos:]):
+                        print(f"LEN: {length} DATALEN: {len(self.packet.data[self.packet.pos:])}")
+                        self.packet.pos = 0    
+                        break
+                
+                    else:
+                        print(f"Len: {length} Packet ID: {self.packet.packet_id}")
+                        msg = Message(self.packet)
 
+                        msg.deserialize(self.packet.packet_id)   
+                        msg.packet.end()     
+
+                        print(msg.variables)
+                        
                 ### Click automatique sur le personnage au lancement du jeu
                 # if message["message"] == "CharactersListMessage":
                 #     self.select_player(message["characters"][0]["id"])
